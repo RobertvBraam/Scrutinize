@@ -1,25 +1,29 @@
 ﻿using System.Runtime.InteropServices;
+using CommandDotNet;
 using Domain.UserCases;
 using Npm = Scanning.Licenses.Npm;
 using Nuget = Scanning.Licenses.Nuget;
 
-Console.WriteLine("Hello, World!");
-var testNpmAppPath = "";
-var testNugetAppPath = "";
-var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-var npmlicenseScanning = new Npm.LicenseScanning(isWindows);
-var usecase = new ScanLicensesUserCase(npmlicenseScanning);
-var licenses = usecase.Execute(testNpmAppPath).Value;
-
-var nugetLicenseScanning = new Nuget.LicenseScanning(isWindows);
-usecase = new ScanLicensesUserCase(nugetLicenseScanning);
-licenses.AddRange(usecase.Execute(testNugetAppPath).Value);
-
-foreach (var license in licenses)
+namespace Host.Console
 {
-    Console.WriteLine($"Name: {license.DependencyName}");
-    Console.WriteLine($"Version: {license.Version}");
-    Console.WriteLine($"License: {license.Type}");
-    Console.WriteLine($"Parent: {string.Join(", ", license.Parents)}");
+    class Program
+    {
+        static int Main(string[] args)
+        {
+            System.Console.WriteLine("Hello World!");
+            var exitcode = new AppRunner<Program>().Run(args);
+            
+            return exitcode;
+        }
+        
+        public void Test(string outLoud)
+        {
+            System.Console.WriteLine(outLoud);
+        }
+        
+        public void TestMore(string outLoud)
+        {
+            System.Console.WriteLine(outLoud);
+        }
+    }
 }
-Console.WriteLine("BYE BYE");
