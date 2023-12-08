@@ -15,18 +15,18 @@ Table of Contents
 - [Usage](#usage)
   - Command Line Interface (CLI)
   - Integration with CI/CD
-- [Extensibility](#extensibility)
+- [Extensibility](#extensibility) (TODO)
   - Plugins
   - Custom Rules
-- [Best Practices](#best-practices)
+- [Best Practices](#best-practices) (TODO)
   - Regular Scans
   - Automated Reporting
   - Collaborative Analysis
-- [Contributing](#contributing)
+- [Contributing](#contributing) (TODO)
   - Reporting Issues
   - Feature Requests
   - Code Contributions
-- [License](#license)
+- [License](#license) (TODO)
 
 ## Getting Started
 
