@@ -5,28 +5,28 @@
 Welcome to Scrutinize - Your Open Source Software (OSS) companion for comprehensive dependency analysis. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies. This documentation will guide you through the setup, features, and best practices to make the most out of Scrutinize in ensuring the security and health of your software projects.
 Table of Contents
 
-- [Getting Started]{#getting-started)
+- [Getting Started](#getting-started)
   - Installation
   - Configuration
-- [Features]{#features)
+- [Features](#features)
   - Dependency Scanning
   - Vulnerability Assessment
   - License Compliance
-- [Usage]{#usage)
+- [Usage](#usage)
   - Command Line Interface (CLI)
   - Integration with CI/CD
-- [Extensibility]{#extensibility)
+- [Extensibility](#extensibility)
   - Plugins
   - Custom Rules
-- [Best Practices]{#best-practices)
+- [Best Practices](#best-practices)
   - Regular Scans
   - Automated Reporting
   - Collaborative Analysis
-- [Contributing]{#contributing)
+- [Contributing](#contributing)
   - Reporting Issues
   - Feature Requests
   - Code Contributions
-- [License]{#license)
+- [License](#license)
 
 ## Getting Started
 
