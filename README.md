@@ -6,33 +6,33 @@ Welcome to Scrutinize - Your Open Source Software (OSS) companion for comprehens
 Table of Contents
 
 - [Getting Started](#getting-started)
-  - Installation
-  - Configuration
+  - [Installation](#installation)
+  - [Configuration](#configuration)
 - [Features](#features)
-  - Dependency Scanning
-  - Vulnerability Assessment
-  - License Compliance
-- [Usage](#usage)
-  - Command Line Interface (CLI)
-  - Integration with CI/CD
+  - [Dependency Scanning](#dependency-sanning)
+  - [Vulnerability Assessment](#vulnerability-assessment)
+  - [License Compliance](#license-compliance)
+- [Usage](#usage) (TODO)
+  - [Command Line Interface](#command-line-interface)
+  - [Integration with CI/CD](#integration-with-cicd)
 - [Extensibility](#extensibility) (TODO)
-  - Plugins
-  - Custom Rules
+  - [Plugins](#plugins)
+  - [Custom Rules](#custom-rules)
 - [Best Practices](#best-practices) (TODO)
-  - Regular Scans
-  - Automated Reporting
-  - Collaborative Analysis
+  - [Regular Scans](#regular-scans)
+  - [Automated Reporting](#automated-reporting)
+  - [Collaborative Analysis](#collaborative-analysis)
 - [Contributing](#contributing) (TODO)
-  - Reporting Issues
-  - Feature Requests
-  - Code Contributions
+  - [Reporting Issues](#reporting-issues)
+  - [Feature Requests](#feature-requests)
+  - [Code Contributions](#code-contributions)
 - [License](#license) (TODO)
 
 ## Getting Started
 
 ### Installation
 
-To install Scrutinize, follow the instructions provided in the Installation Guide.
+To install Scrutinize, there are no specific .
 
 ### Configuration
 
