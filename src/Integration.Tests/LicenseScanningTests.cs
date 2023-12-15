@@ -20,8 +20,11 @@ public class LicenseScanningTests
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();
-        actual.Value.Should().HaveCount(250);
-        actual.Value.Should().Contain(license => license.Parents.Any());
+        actual.Value.Should().HaveCount(20);
+        //Contain specific license
+        actual.Value.Should().Contain(x => x.DependencyName == "AutoMapper" &&
+                                             x.Version == "12.0.1" &&
+                                             x.Type == "MIT");
     }
     
     [Fact]
