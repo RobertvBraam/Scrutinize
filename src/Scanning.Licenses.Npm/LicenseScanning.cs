@@ -49,7 +49,7 @@ public class LicenseScanning : ILicenses
             return Result<List<License>>.Failed(InitializationFailed.Create());
         }
 
-        var psiNpmRunDist2 = new ProcessStartInfo
+        var processStartInfo = new ProcessStartInfo
         {
             FileName = _isWindows ? "cmd" : "/bin/bash",
             WorkingDirectory = sourcePath,
@@ -58,14 +58,14 @@ public class LicenseScanning : ILicenses
             UseShellExecute = false,
             CreateNoWindow = true
         };
-        var pNpmRunDist2 = Process.Start(psiNpmRunDist2)!;
+        var pNpmRunDist2 = Process.Start(processStartInfo)!;
         // execute npm in a different directory
         pNpmRunDist2.StandardInput.WriteLine(@"npm i");
-        pNpmRunDist2.StandardInput.WriteLine(@"npx license-checker --json --out licenses.json");
+        pNpmRunDist2.StandardInput.WriteLine(@"npx license-checker --json --out npmLicenses.json");
         pNpmRunDist2.StandardInput.WriteLine("exit");
         pNpmRunDist2.WaitForExit();
         
-        var fileStream = File.OpenText(sourcePath + "/licenses.json");
+        var fileStream = File.OpenText(sourcePath + "/npmLicenses.json");
         var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
         var licenses = records
             .SelectMany(record => record.Value.ToLicense(record.Key))
