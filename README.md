@@ -3,13 +3,12 @@
 ## Introduction
 
 Welcome to Scrutinize - Your Open Source Software (OSS) companion for comprehensive dependency analysis. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies. This documentation will guide you through the setup, features, and best practices to make the most out of Scrutinize in ensuring the security and health of your software projects.
-Table of Contents
 
+## Table of Contents:
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Configuration](#configuration) (TODO)
 - [Features](#features)
-  - [Dependency Scanning](#dependency-sanning)
   - [Vulnerability Assessment](#vulnerability-assessment)
   - [License Compliance](#license-compliance)
 - [Usage](#usage) (TODO)
@@ -44,13 +43,9 @@ Configure Scrutinize to meet the specific needs of your project. Learn how to se
 
 ## Features
 
-### Dependency Scanning
-
-Scrutinize scans your project's dependencies, whether managed through npm or NuGet, providing a detailed overview of the libraries and frameworks your project relies on.
-
 ### Vulnerability Assessment
 
-Identify and address potential security risks by leveraging Scrutinize's vulnerability assessment capabilities. Stay informed about the latest security updates for your dependencies.
+Identify and address potential security risks by leveraging Scrutinize's vulnerability assessment capabilities. Stay informed about the latest security updates for your dependencies. The assessment is done by scanning your dependencies with the tooling created by npm and Nuget. Both package managers are based on the Github Advisory Database ([npm](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/) and [Nuget](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/)). The assessment will output a list of vulnerabilities contianing the package name, severity and vulnerability reference url.
 
 ### License Compliance
 
