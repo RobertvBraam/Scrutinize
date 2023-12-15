@@ -12,13 +12,8 @@ public class ScanLicensesUserCase
         _licenses = licenses;
     }
     
-    public Result<List<License>> Execute(string sourcePath, bool shouldInitialize = true)
+    public Result<List<License>> Execute(string sourcePath)
     {
-        if (shouldInitialize || _licenses.Initialize().HasFailed)
-        {
-            return Result<List<License>>.Failed(InitializationFailed.Create());
-        }
-        
         var licenses = _licenses.Scan(sourcePath);
         return Result<List<License>>.Succeeded(licenses.Value);
     }

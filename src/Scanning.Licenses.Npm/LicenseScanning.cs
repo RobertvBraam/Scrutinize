@@ -8,43 +8,15 @@ namespace Scanning.Licenses.Npm;
 public class LicenseScanning : ILicenses
 {
     private readonly bool _isWindows;
-    private bool IsInitialized { get; set; }
 
     public LicenseScanning(bool isWindows)
     {
         _isWindows = isWindows;
     }
 
-    public Result Initialize()
-    {
-        if (IsInitialized)
-        {
-            return Result.Succeeded();
-        }
-
-        var projectDirectory = Directory.GetParent(Environment.CurrentDirectory);
-        var psiNpmRunDist1 = new ProcessStartInfo
-        {
-            FileName = _isWindows ? "cmd" : "/bin/bash",
-            WorkingDirectory = projectDirectory?.FullName,
-            RedirectStandardInput = true,
-            RedirectStandardOutput = false,
-            UseShellExecute = false,
-            CreateNoWindow = true
-        };
-        var pNpmRunDist1 = Process.Start(psiNpmRunDist1)!;
-        pNpmRunDist1.StandardInput.WriteLine(@"npm -g install license-checker");
-        pNpmRunDist1.StandardInput.WriteLine("exit");
-        pNpmRunDist1.WaitForExit();
-
-        IsInitialized = true;
-
-        return Result.Succeeded();
-    }
-
     public Result<List<License>> Scan(string sourcePath)
     {
-        if (!IsInitialized || !Directory.Exists(sourcePath))
+        if (!Directory.Exists(sourcePath))
         {
             return Result<List<License>>.Failed(InitializationFailed.Create());
         }

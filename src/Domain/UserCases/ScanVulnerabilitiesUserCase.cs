@@ -12,13 +12,8 @@ public class ScanVulnerabilitiesUserCase
         _vulnerabilities = vulnerabilities;
     }
     
-    public Result<List<Vulnerability>> Execute(string sourcePath, bool shouldInitialize = true)
+    public Result<List<Vulnerability>> Execute(string sourcePath)
     {
-        if (shouldInitialize || _vulnerabilities.Initialize().HasFailed)
-        {
-            return Result<List<Vulnerability>>.Failed(InitializationFailed.Create());
-        }
-        
         var vulnerabilities = _vulnerabilities.Scan(sourcePath);
         return Result<List<Vulnerability>>.Succeeded(vulnerabilities.Value);
     }
