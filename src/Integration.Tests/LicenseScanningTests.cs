@@ -16,7 +16,7 @@ public class LicenseScanningTests
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
-        var actual = sut.Execute(TestAppHelper.TestAppDirectory, false);
+        var actual = sut.Execute(TestAppHelper.TestAppDirectory);
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();
@@ -35,7 +35,7 @@ public class LicenseScanningTests
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
-        var actual = sut.Execute(TestAppHelper.TestAppDirectory, false);
+        var actual = sut.Execute(TestAppHelper.TestAppDirectory);
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();

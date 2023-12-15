@@ -1,9 +1,5 @@
 ﻿using System.Diagnostics;
-using System.Globalization;
 using System.Text.Json;
-using System.Text.Json.Serialization;
-using CsvHelper;
-using CsvHelper.Configuration;
 using Domain.Models;
 using Domain.Results;
 
@@ -19,43 +15,11 @@ public class LicenseScanning : ILicenses
         _isWindows = isWindows;
     }
 
-    public Result Initialize()
-    {
-        if (IsInitialized)
-        {
-            return Result.Succeeded();
-        }
-
-        var projectDirectory = Directory.GetParent(Environment.CurrentDirectory);
-        var psiNpmRunDist1 = new ProcessStartInfo
-        {
-            FileName = _isWindows ? "cmd" : "/bin/bash",
-            WorkingDirectory = projectDirectory?.FullName,
-            RedirectStandardInput = true,
-            RedirectStandardOutput = false,
-            UseShellExecute = false,
-            CreateNoWindow = true
-        };
-        var pNpmRunDist1 = Process.Start(psiNpmRunDist1)!;
-        pNpmRunDist1.StandardInput.WriteLine(@"dotnet tool install --global dotnet-project-licenses");
-        pNpmRunDist1.StandardInput.WriteLine("exit");
-        pNpmRunDist1.WaitForExit();
-
-        IsInitialized = true;
-
-        return Result.Succeeded();
-    }
-
     public Result<List<License>> Scan(string sourcePath)
     {
-        if (!IsInitialized)
-        {
-            return Result<List<License>>.Failed(InitializationFailed.Create());
-        }
-
         var processStartInfo = new ProcessStartInfo
         {
-            FileName = "powershell",
+            FileName = _isWindows ? "cmd" : "/bin/bash",
             WorkingDirectory = sourcePath,
             RedirectStandardInput = true,
             RedirectStandardOutput = false,
