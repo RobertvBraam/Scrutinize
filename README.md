@@ -7,32 +7,36 @@ Table of Contents
 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
-  - [Configuration](#configuration)
+  - [Configuration](#configuration) (TODO)
 - [Features](#features)
   - [Dependency Scanning](#dependency-sanning)
   - [Vulnerability Assessment](#vulnerability-assessment)
   - [License Compliance](#license-compliance)
 - [Usage](#usage) (TODO)
-  - [Command Line Interface](#command-line-interface)
-  - [Integration with CI/CD](#integration-with-cicd)
+  - [Command Line Interface](#command-line-interface) (TODO)
+  - [Integration with CI/CD](#integration-with-cicd) (TODO)
 - [Extensibility](#extensibility) (TODO)
-  - [Plugins](#plugins)
-  - [Custom Rules](#custom-rules)
+  - [Plugins](#plugins) (TODO)
+  - [Custom Rules](#custom-rules) (TODO)
 - [Best Practices](#best-practices) (TODO)
-  - [Regular Scans](#regular-scans)
-  - [Automated Reporting](#automated-reporting)
-  - [Collaborative Analysis](#collaborative-analysis)
+  - [Regular Scans](#regular-scans) (TODO)
+  - [Automated Reporting](#automated-reporting) (TODO)
+  - [Collaborative Analysis](#collaborative-analysis) (TODO)
 - [Contributing](#contributing) (TODO)
-  - [Reporting Issues](#reporting-issues)
-  - [Feature Requests](#feature-requests)
-  - [Code Contributions](#code-contributions)
+  - [Reporting Issues](#reporting-issues) (TODO)
+  - [Feature Requests](#feature-requests) (TODO)
+  - [Code Contributions](#code-contributions) (TODO)
 - [License](#license) (TODO)
 
 ## Getting Started
 
 ### Installation
 
-To install Scrutinize, there are no specific .
+To install Scrutinize, you only need to install npm (v9.4+) and nuget(v7.0+) and the following packages/tools: [license-checker](https://www.npmjs.com/package/license-checker) and [dotnet-project-licenses](https://www.nuget.org/packages/dotnet-project-licenses/2.7.1).
+
+Commands to install the tools:
+- `npm -g install license-checker`
+- `dotnet tool install --global dotnet-project-licenses`
 
 ### Configuration
 
