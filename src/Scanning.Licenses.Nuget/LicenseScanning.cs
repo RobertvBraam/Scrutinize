@@ -62,12 +62,12 @@ public class LicenseScanning : ILicenses
             UseShellExecute = false,
             CreateNoWindow = true
         };
-        var pNpmRunDist2 = Process.Start(processStartInfo)!;
+        var process = Process.Start(processStartInfo)!;
         // execute npm in a different directory
-        pNpmRunDist2.StandardInput.WriteLine(@"dotnet restore");
-        pNpmRunDist2.StandardInput.WriteLine(@"dotnet-project-licenses -i ./ -j --outfile nugetLicenses.json");
-        pNpmRunDist2.StandardInput.WriteLine("exit");
-        pNpmRunDist2.WaitForExit();
+        process.StandardInput.WriteLine(@"dotnet restore");
+        process.StandardInput.WriteLine(@"dotnet-project-licenses -i ./ -j --outfile nugetLicenses.json");
+        process.StandardInput.WriteLine("exit");
+        process.WaitForExit();
         
         var fileStream = File.OpenText(sourcePath + "/nugetLicenses.json");
         var records = JsonSerializer.Deserialize<List<LicenseCheckRecord>>(fileStream.ReadToEnd(), 

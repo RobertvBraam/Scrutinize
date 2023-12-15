@@ -58,12 +58,12 @@ public class LicenseScanning : ILicenses
             UseShellExecute = false,
             CreateNoWindow = true
         };
-        var pNpmRunDist2 = Process.Start(processStartInfo)!;
+        var process = Process.Start(processStartInfo)!;
         // execute npm in a different directory
-        pNpmRunDist2.StandardInput.WriteLine(@"npm i");
-        pNpmRunDist2.StandardInput.WriteLine(@"npx license-checker --json --out npmLicenses.json");
-        pNpmRunDist2.StandardInput.WriteLine("exit");
-        pNpmRunDist2.WaitForExit();
+        process.StandardInput.WriteLine(@"npm i");
+        process.StandardInput.WriteLine(@"npx license-checker --json --out npmLicenses.json");
+        process.StandardInput.WriteLine("exit");
+        process.WaitForExit();
         
         var fileStream = File.OpenText(sourcePath + "/npmLicenses.json");
         var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
