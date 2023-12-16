@@ -45,11 +45,11 @@ Configure Scrutinize to meet the specific needs of your project. Learn how to se
 
 ### Vulnerability Assessment
 
-Identify and address potential security risks by leveraging Scrutinize's vulnerability assessment capabilities. Stay informed about the latest security updates for your dependencies. The assessment is done by scanning your dependencies with the tooling created by npm and Nuget. Both package managers are based on the Github Advisory Database ([npm](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/) and [Nuget](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/)). The assessment will output a list of vulnerabilities contianing the package name, severity and vulnerability reference url.
+The vulnerability assessment is done by scanning the dependencies of specified project with the tooling natively integrated by npm (e.g. `npm audit`) and Nuget (e.g. `dotnet list package --vulnerable`). Both package managers are based on the Github Advisory Database ([npm](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/) and [Nuget](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/)) to determine what vulnerabilities are present in the packages. The assessment will output a list of vulnerabilities contianing the package name, version, severity and vulnerability reference url.
 
 ### License Compliance
 
-Ensure compliance with open-source licenses by using Scrutinize to analyze and report on the licenses associated with your project's dependencies.
+Licenses are being scanned using open source tooling to analyse if dependencies are compliant to the licenses you allow. Tooling that are used: for npm [license-checker](https://www.npmjs.com/package/license-checker) and for Nuget [dotnet-project-licenses](https://www.nuget.org/packages/dotnet-project-licenses/2.7.1). The output of a License scan will be a list of the package name, version and it's license type.
 
 ## Usage
 
