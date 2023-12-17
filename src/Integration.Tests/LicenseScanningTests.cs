@@ -6,6 +6,7 @@ using Nuget = Scanning.Licenses.Nuget;
 
 namespace Integration.Tests;
 
+[Collection("Integration tests")]
 public class LicenseScanningTests
 {
     [Fact]
