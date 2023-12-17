@@ -40,6 +40,4 @@ jobs:
     - name: Create NuGet package
       run: dotnet pack --no-build --output ./nuget-packages
     - name: Publish to NuGet
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.nuget_api_key}}
-      run: dotnet nuget push ./nuget-packages/Scrutinize.*.nupkg --source https://api.nuget.org/v3/index.json --api-key "${{ secrets.nuget_api_key }}" --skip-duplicate
+      run: dotnet nuget push "./nuget-packages/Scrutinize.*.nupkg" -k "${{secrets.nuget_api_key}}" --source "https://api.nuget.org/v3/index.json" --skip-duplicate
