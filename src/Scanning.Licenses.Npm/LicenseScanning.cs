@@ -8,6 +8,7 @@ namespace Scanning.Licenses.Npm;
 public class LicenseScanning : ILicenses
 {
     private readonly bool _isWindows;
+    private readonly string filename = "npmLicenses.json";
 
     public LicenseScanning(bool isWindows)
     {
@@ -32,12 +33,12 @@ public class LicenseScanning : ILicenses
         };
         var process = Process.Start(processStartInfo)!;
         // execute npm in a different directory
-        process.StandardInput.WriteLine(@"npm i");
-        process.StandardInput.WriteLine(@"npx license-checker --json --out npmLicenses.json");
+        process.StandardInput.WriteLine("npm i");
+        process.StandardInput.WriteLine($"npx license-checker --json --out {filename}");
         process.StandardInput.WriteLine("exit");
         process.WaitForExit();
         
-        var fileStream = File.OpenText(sourcePath + "/npmLicenses.json");
+        var fileStream = File.OpenText($"{sourcePath}/{filename}");
         var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
         var licenses = records
             .SelectMany(record => record.Value.ToLicense(record.Key))
