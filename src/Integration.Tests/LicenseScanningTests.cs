@@ -12,7 +12,7 @@ public class LicenseScanningTests
     public void WhenNugetScanningLicenses_ThenReturnListOfLicenses()
     {
         //Arrange
-        var licensesScanning = new Nuget.LicenseScanning(true);
+        var licensesScanning = new Nuget.LicenseScanning(TestAppHelper.IsWindows);
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
@@ -31,7 +31,7 @@ public class LicenseScanningTests
     public void WhenNpmScanningLicenses_ThenReturnListOfLicenses()
     {
         //Arrange
-        var licensesScanning = new Npm.LicenseScanning(true);
+        var licensesScanning = new Npm.LicenseScanning(TestAppHelper.IsWindows);
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
