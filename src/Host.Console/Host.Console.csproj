@@ -9,6 +9,16 @@
         <SelfContained>true</SelfContained>
         <OutputType>Exe</OutputType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+        <Version>1.0.0-alpha</Version>
+        <Title>Scrutinize</Title>
+        <Authors>RobertvBraam</Authors>
+        <Description>Your Open Source Software (OSS) tool to do a comprehensive dependency analysis for licenses and vulnerabilities. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies.</Description>
+        <Copyright>Copyright (c) RobertvBraam 2023</Copyright>
+        <PackageProjectUrl>https://github.com/RobertvBraam/Scrutinize</PackageProjectUrl>
+        <PackageLicenseUrl>https://licenses.nuget.org/AGPL-3.0-or-later</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/RobertvBraam/Scrutinize</RepositoryUrl>
+        <PackageTags>security, dependencies, license, vulnerability, npm, nuget, console, ci-cd</PackageTags>
+        <PackageId>Scrutinize</PackageId>
     </PropertyGroup>
 
     <ItemGroup>
