@@ -8,6 +8,10 @@
         <PublishSingleFile>true</PublishSingleFile>
         <SelfContained>true</SelfContained>
         <OutputType>Exe</OutputType>
+        <IsPackable>true</IsPackable>
+        <PackAsTool>true</PackAsTool>
+        <PackageType>DotnetTool</PackageType>
+        <RepositoryType>git</RepositoryType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
         <Version>1.0.0-alpha</Version>
         <Title>Scrutinize</Title>
