@@ -5,8 +5,6 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <PublishSingleFile>true</PublishSingleFile>
-        <SelfContained>true</SelfContained>
         <OutputType>Exe</OutputType>
         <IsPackable>true</IsPackable>
         <PackAsTool>true</PackAsTool>
@@ -19,7 +17,7 @@
         <Description>Your Open Source Software (OSS) tool to do a comprehensive dependency analysis for licenses and vulnerabilities. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies.</Description>
         <Copyright>Copyright (c) RobertvBraam 2023</Copyright>
         <PackageProjectUrl>https://github.com/RobertvBraam/Scrutinize</PackageProjectUrl>
-        <PackageLicenseUrl>https://licenses.nuget.org/AGPL-3.0-or-later</PackageLicenseUrl>
+        <license>AGPL-3.0-or-later</license>
         <RepositoryUrl>https://github.com/RobertvBraam/Scrutinize</RepositoryUrl>
         <PackageTags>security, dependencies, license, vulnerability, npm, nuget, console, ci-cd</PackageTags>
         <PackageId>Scrutinize</PackageId>

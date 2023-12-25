@@ -49,6 +49,8 @@ jobs:
         dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
     - name: Create NuGet package
       run: dotnet pack --no-build --output ./nuget-packages
     - name: Publish to NuGet
