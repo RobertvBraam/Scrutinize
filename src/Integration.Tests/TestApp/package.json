@@ -22,7 +22,7 @@
         "ts-loader": "^8.0.4",
         "typescript": "^3.9.10",
         "vue-class-component": "^7.2.6",
-        "vue-jest": "3.0.7",
+        "vue-jest": "4.0.1",
         "vue-property-decorator": "^9.1.2",
         "vuex-module-decorators": "1.0.1"
     }
