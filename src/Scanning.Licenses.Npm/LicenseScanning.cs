@@ -37,16 +37,13 @@ public class LicenseScanning : ILicenses
         process.StandardInput.WriteLine($"npx license-checker --json --out {filename}");
         process.StandardInput.WriteLine("exit");
         process.WaitForExit();
-        if (process.HasExited)
-        {
-            var fileStream = File.OpenText($"{sourcePath}/{filename}");
-            var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
-            var licenses = records
-                .SelectMany(record => record.Value.ToLicense(record.Key))
-                .ToList();
+        
+        var fileStream = File.OpenText($"{sourcePath}/{filename}");
+        var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
+        var licenses = records
+            .SelectMany(record => record.Value.ToLicense(record.Key))
+            .ToList();
 
-            return Result<List<License>>.Succeeded(licenses);
-        }
-        return Result<List<License>>.Failed(InitializationFailed.Create());
+        return Result<List<License>>.Succeeded(licenses);
     }
 }
