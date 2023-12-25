@@ -13,7 +13,7 @@
         <PackageType>DotnetTool</PackageType>
         <RepositoryType>git</RepositoryType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
-        <Version>1.0.0-alpha</Version>
+        <Version>1.0.0-alpha.1</Version>
         <Title>Scrutinize</Title>
         <Authors>RobertvBraam</Authors>
         <Description>Your Open Source Software (OSS) tool to do a comprehensive dependency analysis for licenses and vulnerabilities. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies.</Description>
