@@ -11,13 +11,14 @@
         <PackageType>DotnetTool</PackageType>
         <RepositoryType>git</RepositoryType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
-        <Version>1.0.0-alpha.1</Version>
+        <Version>1.0.0-alpha.2</Version>
         <Title>Scrutinize</Title>
         <Authors>RobertvBraam</Authors>
         <Description>Your Open Source Software (OSS) tool to do a comprehensive dependency analysis for licenses and vulnerabilities. Scrutinize is a powerful and extensible tool designed to scan and analyze software projects utilizing npm and NuGet for their dependencies.</Description>
         <Copyright>Copyright (c) RobertvBraam 2023</Copyright>
         <PackageProjectUrl>https://github.com/RobertvBraam/Scrutinize</PackageProjectUrl>
-        <license>AGPL-3.0-or-later</license>
+        <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/RobertvBraam/Scrutinize</RepositoryUrl>
         <PackageTags>security, dependencies, license, vulnerability, npm, nuget, console, ci-cd</PackageTags>
         <PackageId>Scrutinize</PackageId>
@@ -28,6 +29,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Include="..\..\README.md" Pack="true" PackagePath="\" />
       <ProjectReference Include="..\Domain\Domain.csproj" />
       <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj" />
       <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj" />
