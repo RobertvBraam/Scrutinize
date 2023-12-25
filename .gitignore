@@ -400,3 +400,4 @@ nugetVulnerabilities.json
 nugetLicenses.json
 npmVulnerabilities.json
 npmLicenses.json
+.config/

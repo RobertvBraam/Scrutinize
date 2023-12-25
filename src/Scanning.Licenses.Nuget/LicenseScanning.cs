@@ -17,10 +17,12 @@ public class LicenseScanning : ILicenses
 
     public Result<List<License>> Scan(string sourcePath)
     {
+        //Dotnet tools need to be installed locally to be used in a linux environment therefore the tool is run within the source directory.
+        var sourceDirectory = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.Parent!.ToString();
         var processStartInfo = new ProcessStartInfo
         {
             FileName = _isWindows ? "cmd" : "/bin/bash",
-            WorkingDirectory = sourcePath,
+            WorkingDirectory = sourceDirectory,
             RedirectStandardInput = true,
             RedirectStandardOutput = false,
             UseShellExecute = false,
@@ -29,7 +31,7 @@ public class LicenseScanning : ILicenses
         var process = Process.Start(processStartInfo)!;
         // execute npm in a different directory
         process.StandardInput.WriteLine("dotnet restore");
-        process.StandardInput.WriteLine($"dotnet-project-licenses -i ./ -j --outfile {filename}");
+        process.StandardInput.WriteLine($"dotnet tool run dotnet-project-licenses -i {sourcePath} -j --outfile {sourcePath}/{filename}");
         process.StandardInput.WriteLine("exit");
         process.WaitForExit();
         

@@ -26,6 +26,12 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+    - name: Install npm tools
+      run: npm install license-checker
+    - name: Install dotnet tools manifest
+      run: dotnet new tool-manifest --force
+    - name: Install dotnet tools
+      run: dotnet tool install dotnet-project-licenses
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
