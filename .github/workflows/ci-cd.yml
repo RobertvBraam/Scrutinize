@@ -1,0 +1,57 @@
+# This workflow will build and publish a .NET project to NuGet
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Install npm tools
+      run: npm install license-checker
+    - name: Install dotnet tools manifest
+      run: dotnet new tool-manifest --force
+    - name: Install dotnet tools
+      run: dotnet tool install dotnet-project-licenses
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+  publish:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build -c Release --no-restore
+    - name: Create NuGet package
+      run: dotnet pack --no-build --output ./nuget-packages
+    - name: Publish to NuGet
+      run: dotnet nuget push "./nuget-packages/Scrutinize.*.nupkg" -k "${{secrets.nuget_api_key}}" --source "https://api.nuget.org/v3/index.json" --skip-duplicate

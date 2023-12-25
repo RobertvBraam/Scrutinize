@@ -12,27 +12,30 @@ public class LicenseScanningTests
     public void WhenNugetScanningLicenses_ThenReturnListOfLicenses()
     {
         //Arrange
-        var licensesScanning = new Nuget.LicenseScanning(true);
+        var licensesScanning = new Nuget.LicenseScanning(TestAppHelper.IsWindows);
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
-        var actual = sut.Execute(TestAppHelper.TestAppDirectory, false);
+        var actual = sut.Execute(TestAppHelper.TestAppDirectory);
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();
-        actual.Value.Should().HaveCount(250);
-        actual.Value.Should().Contain(license => license.Parents.Any());
+        actual.Value.Should().HaveCount(20);
+        //Contain specific license
+        actual.Value.Should().Contain(x => x.DependencyName == "AutoMapper" &&
+                                             x.Version == "12.0.1" &&
+                                             x.Type == "MIT");
     }
     
     [Fact]
     public void WhenNpmScanningLicenses_ThenReturnListOfLicenses()
     {
         //Arrange
-        var licensesScanning = new Npm.LicenseScanning(true);
+        var licensesScanning = new Npm.LicenseScanning(TestAppHelper.IsWindows);
         var sut = new ScanLicensesUserCase(licensesScanning);
 
         //Act
-        var actual = sut.Execute(TestAppHelper.TestAppDirectory, false);
+        var actual = sut.Execute(TestAppHelper.TestAppDirectory);
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();

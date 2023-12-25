@@ -1,7 +1,5 @@
 ﻿using System.Diagnostics;
-using System.Globalization;
-using CsvHelper;
-using CsvHelper.Configuration;
+using System.Text.Json;
 using Domain.Models;
 using Domain.Results;
 
@@ -10,81 +8,60 @@ namespace Scanning.Licenses.Nuget;
 public class LicenseScanning : ILicenses
 {
     private readonly bool _isWindows;
-    private bool IsInitialized { get; set; }
+    private readonly string filename = "nugetLicenses.json";
 
     public LicenseScanning(bool isWindows)
     {
         _isWindows = isWindows;
     }
 
-    public Result Initialize()
+    public Result<List<License>> Scan(string sourcePath)
     {
-        if (IsInitialized)
-        {
-            return Result.Succeeded();
-        }
-
-        var projectDirectory = Directory.GetParent(Environment.CurrentDirectory);
-        var psiNpmRunDist1 = new ProcessStartInfo
+        //Dotnet tools need to be installed locally to be used in a linux environment therefore the tool is run within the source directory.
+        var sourceDirectory = Directory.GetParent(Environment.CurrentDirectory)!.Parent!.Parent!.Parent!.ToString();
+        var processStartInfo = new ProcessStartInfo
         {
             FileName = _isWindows ? "cmd" : "/bin/bash",
-            WorkingDirectory = projectDirectory?.FullName,
+            WorkingDirectory = sourceDirectory,
             RedirectStandardInput = true,
             RedirectStandardOutput = false,
             UseShellExecute = false,
             CreateNoWindow = true
         };
-        var pNpmRunDist1 = Process.Start(psiNpmRunDist1)!;
-        pNpmRunDist1.StandardInput.WriteLine(@"dotnet tool install --global dotnet-project-licenses");
-        pNpmRunDist1.StandardInput.WriteLine("exit");
-        pNpmRunDist1.WaitForExit();
-
-        IsInitialized = true;
-
-        return Result.Succeeded();
-    }
-
-    public Result<List<License>> Scan(string sourcePath)
-    {
-        if (!IsInitialized)
-        {
-            return Result<List<License>>.Failed(InitializationFailed.Create());
-        }
-
-        var psiNpmRunDist2 = new ProcessStartInfo
-        {
-            FileName = "powershell",
-            WorkingDirectory = sourcePath,
-            RedirectStandardInput = true,
-            RedirectStandardOutput = true,
-            UseShellExecute = false,
-            CreateNoWindow = true
-        };
-        var pNpmRunDist2 = Process.Start(psiNpmRunDist2)!;
+        var process = Process.Start(processStartInfo)!;
         // execute npm in a different directory
-        pNpmRunDist2.StandardInput.WriteLine(@"npm i");
-        pNpmRunDist2.StandardInput.WriteLine(@"npx licensecheck --tsv");
-        pNpmRunDist2.StandardInput.WriteLine("exit");
-        var output = pNpmRunDist2.StandardOutput.ReadToEnd();
-
-        var readerConfiguration = new CsvConfiguration(CultureInfo.InvariantCulture)
-        {
-            Delimiter = "\t",
-            HasHeaderRecord = false,
-            MissingFieldFound = null,
-            BadDataFound = null,
-            IgnoreBlankLines = true
-        };
-        var csvHelper = new CsvReader(new StringReader(output), readerConfiguration);
-
-        csvHelper.Read();
-
-        var records = csvHelper.GetRecords<LicenseCheckRecord>().ToList();
+        process.StandardInput.WriteLine("dotnet restore");
+        process.StandardInput.WriteLine($"dotnet tool run dotnet-project-licenses -i {sourcePath} -j --outfile {sourcePath}/{filename}");
+        process.StandardInput.WriteLine("exit");
+        process.WaitForExit();
+        
+        var fileStream = File.OpenText($"{sourcePath}/{filename}");
+        var records = JsonSerializer.Deserialize<List<LicenseCheckRecord>>(fileStream.ReadToEnd(), 
+            new JsonSerializerOptions()
+            {
+                PropertyNameCaseInsensitive = true
+            });
         var licenses = records
-            .Where(record => record.IsValid)
             .Select(record => record.ToLicense())
             .ToList();
 
         return Result<List<License>>.Succeeded(licenses);
     }
+    
+    public class LicenseCheckRecord
+    {
+        public string PackageName { get; set; }
+        public string PackageVersion { get; set; }
+        public string LicenseType { get; set; }
+
+        public License ToLicense()
+        {
+            return new License()
+            {
+                DependencyName = PackageName,
+                Type = LicenseType,
+                Version = PackageVersion
+            };
+        }
+    }   
 }
