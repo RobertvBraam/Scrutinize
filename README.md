@@ -33,9 +33,9 @@ Welcome to Scrutinize - Your Open Source Software (OSS) companion for comprehens
 
 To install Scrutinize, you only need to install npm (v9.4+) and nuget(v7.0+) and the following packages/tools: [license-checker](https://www.npmjs.com/package/license-checker) and [dotnet-project-licenses](https://www.nuget.org/packages/dotnet-project-licenses/2.7.1).
 
-Commands to install the tools:
-- `npm -g install license-checker`
-- `dotnet tool install --global dotnet-project-licenses`
+Commands to install the tools (execute in the `./src` directory):
+- `npm install license-checker`
+- `dotnet new tool-manifest --force && dotnet tool install dotnet-project-licenses`
 
 ### Configuration
 
@@ -45,7 +45,7 @@ Configure Scrutinize to meet the specific needs of your project. Learn how to se
 
 ### Vulnerability Assessment
 
-The vulnerability assessment is done by scanning the dependencies of specified project with the tooling natively integrated by npm (e.g. `npm audit`) and Nuget (e.g. `dotnet list package --vulnerable`). Both package managers are based on the Github Advisory Database ([npm](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/) and [Nuget](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/)) to determine what vulnerabilities are present in the packages. The assessment will output a list of vulnerabilities contianing the package name, version, severity and vulnerability reference url.
+The vulnerability assessment is done by scanning the dependencies of specified project with the tooling natively integrated by npm (e.g. `npm audit`) and Nuget (e.g. `dotnet list package --vulnerable`). Both package managers are based on the Github Advisory Database ([npm](https://github.blog/2021-10-07-github-advisory-database-now-powers-npm-audit/) and [Nuget](https://devblogs.microsoft.com/nuget/how-to-scan-nuget-packages-for-security-vulnerabilities/)) to determine what vulnerabilities are present in the packages. The assessment will output a list of vulnerabilities contianing the package name, version, severity and the vulnerability reference url.
 
 ### License Compliance
 
@@ -55,11 +55,37 @@ Licenses are being scanned using open source tooling to analyse if dependencies 
 
 ### Command Line Interface (CLI)
 
-Learn how to use Scrutinize's command-line interface for manual scans and integration into your development workflow. Find detailed instructions in the CLI Guide.
+Learn how to use Scrutinize's command-line interface for manual scans and integration into your development workflow. Find detailed instructions in the CLI Guide by calling `scrutinize -h`.
 
 ### Integration with CI/CD
 
 Integrate Scrutinize into your Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate dependency analysis. Follow the steps outlined in the CI/CD Integration Guide.
+
+Azure DevOps example to run Scrutinize in your pipeline (untested):
+```yaml
+- task: Npm@1
+  displayName: 'Install npm dependencies'
+  inputs:
+    command: 'install license-checker'
+    verbose: false
+- task: dotnet@2
+  displayName: 'Install local manifest'
+  inputs:
+      command: 'custom'
+      custom: 'new'
+      arguments: 'tool-manifest --force'
+- task: dotnet@2
+  displayName: 'Install dotnet-project-licenses tool'
+  inputs:
+    command: 'custom'
+    custom: 'tool'
+    arguments: 'install dotnet-project-licenses'
+- task: Nuget@1
+  displayName: 'Install Scrutinize tool'
+  inputs:
+    command: 'custom'
+    arguments: 'tool install Scrutinize'
+```
 
 ## Best Practices
 
