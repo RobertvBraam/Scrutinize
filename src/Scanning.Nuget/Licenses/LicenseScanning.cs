@@ -3,7 +3,7 @@ using System.Text.Json;
 using Domain.Models;
 using Domain.Results;
 
-namespace Scanning.Licenses.Nuget;
+namespace Scanning.Nuget.Licenses;
 
 public class LicenseScanning : ILicenses
 {

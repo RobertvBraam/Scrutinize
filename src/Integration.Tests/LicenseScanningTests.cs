@@ -1,8 +1,8 @@
 ﻿using Domain.UserCases;
 using FluentAssertions;
 using Integration.Tests.Utils;
-using Npm = Scanning.Licenses.Npm;
-using Nuget = Scanning.Licenses.Nuget;
+using Npm = Scanning.Npm.Licenses;
+using Nuget = Scanning.Nuget.Licenses;
 
 namespace Integration.Tests;
 
