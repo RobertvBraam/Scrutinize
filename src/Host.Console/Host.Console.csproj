@@ -11,6 +11,7 @@
         <PackageType>DotnetTool</PackageType>
         <RepositoryType>git</RepositoryType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+        <AssemblyName>Scrutinize</AssemblyName>
         <Version>1.0.0-alpha.2</Version>
         <Title>Scrutinize</Title>
         <Authors>RobertvBraam</Authors>

@@ -1,29 +1,48 @@
-﻿using System.Runtime.InteropServices;
-using CommandDotNet;
-using Domain.UserCases;
-using Npm = Scanning.Licenses.Npm;
-using Nuget = Scanning.Licenses.Nuget;
+﻿using CommandDotNet;
 
 namespace Host.Console
 {
+    [Command(Description = "Scrutinize your cli tooling for vulnerabilities and licenses scanning")]
     class Program
     {
         static int Main(string[] args)
         {
-            System.Console.WriteLine("Hello World!");
-            var exitcode = new AppRunner<Program>().Run(args);
+            var appSettings = new AppSettings();
+            var appRunner = new AppRunner<Program>(appSettings);
+            appRunner.UseDefaultMiddleware();
+            var exitcode = appRunner.Run(args);
             
             return exitcode;
         }
         
-        public void Test(string outLoud)
-        {
-            System.Console.WriteLine(outLoud);
-        }
-        
-        public void TestMore(string outLoud)
-        {
-            System.Console.WriteLine(outLoud);
-        }
+        [Subcommand]
+        public Licenses Licenses { get; set; } = null!;
+
+        [Subcommand]
+        public Vulnerabilities Vulnerabilities { get; set; } = null!;
+    }
+}
+
+[Command(Description = "Scan the project for licenses")]
+public class Licenses
+{
+    [DefaultCommand] 
+    public void DefaultCommand(
+        [Option('p', "path", Description = "Path to the root of the project")] string path)
+    {
+        Console.WriteLine(path);
+    }
+}
+
+
+    
+[Command(Description = "Scan the project for vulnerabilities")]
+public class Vulnerabilities
+{
+    [DefaultCommand] 
+    public void DefaultCommand(
+        [Option('p', "path", Description = "Path to the root of the project")] string path)
+    {
+        Console.WriteLine(path);
     }
 }
