@@ -1,7 +1,3 @@
 ﻿namespace Vulnerabilities.Nuget;
 
-internal class Framework
-{
-    public List<TopLevelPackage> TopLevelPackages { get; set; }
-    public List<TransitivePackage> TransitivePackages { get; set; }
-}
+internal record Framework(List<TopLevelPackage> TopLevelPackages, List<TransitivePackage> TransitivePackages);

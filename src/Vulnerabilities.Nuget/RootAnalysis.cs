@@ -1,14 +1,17 @@
-﻿using System.Text.Json.Serialization;
-using Domain.Models;
+﻿using Domain.Models;
 
 namespace Vulnerabilities.Nuget;
 
 internal class RootAnalysis
 {
-    [JsonPropertyName("projects")]
+    public RootAnalysis(List<ProjectRecord> projects)
+    {
+        Projects = projects;
+    }
+
     public List<ProjectRecord> Projects { get; set; }
 
-    public List<Vulnerability> ToVulnarabilties()
+    public List<Vulnerability> ToVulnerabilities()
     {
         var vulnerabilities = new List<Vulnerability>();
 
@@ -18,23 +21,13 @@ internal class RootAnalysis
             {
                 vulnerabilities.AddRange(framework.TopLevelPackages
                     .SelectMany(package => package.Vulnerabilities
-                        .Select(vulnerability => new Vulnerability()
-                        {
-                            DependencyName = package.Id,
-                            Severity = vulnerability.Severity,
-                            Source = vulnerability.Advisoryurl
-                        })
+                        .Select(vulnerability => new Vulnerability(package.Id, vulnerability.Severity, vulnerability.Advisoryurl))
                     )
                 );
                 
                 vulnerabilities.AddRange(framework.TransitivePackages
                     .SelectMany(package => package.Vulnerabilities
-                        .Select(vulnerability => new Vulnerability()
-                        {
-                            DependencyName = package.Id,
-                            Severity = vulnerability.Severity,
-                            Source = vulnerability.Advisoryurl
-                        })
+                        .Select(vulnerability => new Vulnerability(package.Id, vulnerability.Severity, vulnerability.Advisoryurl))
                     )
                 );
             }

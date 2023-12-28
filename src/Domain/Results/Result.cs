@@ -1,36 +1,39 @@
 ﻿namespace Domain.Results;
 
-public class Result<T>
+public class Result<T> : Result
 {
-    public bool HasSucceeded { get; private set; }
-    public bool HasFailed => !HasSucceeded;
     public static Result<T> Succeeded(T value)
     {
         var result = new Result<T>()
         {
-            Value = value,
+            _value = value,
             HasSucceeded = true
         };
         return result;
     }
 
-    public static Result<T> Failed(IDomainFailure failure)
+    public new static Result<T> Failed(IDomainFailure failure)
     {
         var result = new Result<T>()
         {
-            FailureReason = failure,
+            _failureReason = failure,
             HasSucceeded = false
         };
         return result;
     }
+    
+    public T Value => HasSucceeded ? _value! : throw new InvalidOperationException("Cannot access value of failed result");
+    private T? _value;
 
-    public T Value { get; init; }
-    public IDomainFailure FailureReason { get; init; }
+    private Result()
+    {
+        
+    }
 }
 
 public class Result
 {
-    public bool HasSucceeded { get; private set; }
+    public bool HasSucceeded { get; protected set; }
     public bool HasFailed => !HasSucceeded;
     public static Result Succeeded()
     {
@@ -45,10 +48,17 @@ public class Result
     {
         var result = new Result()
         {
-            FailureReason = failure,
+            _failureReason = failure,
             HasSucceeded = false
         };
         return result;
     }
-    public IDomainFailure FailureReason { get; init; }
+    public IDomainFailure FailureReason => HasFailed ? _failureReason! : throw new InvalidOperationException("Cannot access failure reason of successful result");
+    // ReSharper disable once InconsistentNaming
+    protected IDomainFailure? _failureReason;
+
+    protected Result()
+    {
+        
+    }
 }

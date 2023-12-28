@@ -16,12 +16,7 @@ internal class LicenseCheckRecord
             foreach (var license in Licenses.Split("OR").Select(x => x.Trim('(', ')', ' ')))
             {
                 var version = fullName.Split("@").Last();
-                yield return new License()
-                {
-                    DependencyName = fullName.Replace("@" + version, ""),
-                    Version = version,
-                    Type = license
-                };
+                yield return new License(fullName.Replace("@" + version, ""), version, license);
             }
         }
     }
