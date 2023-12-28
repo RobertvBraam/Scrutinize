@@ -1,8 +1,3 @@
 ﻿namespace Vulnerabilities.Npm;
 
-public class Dependency
-{
-    public string Name { get; set; }
-    public string Url { get; set; }
-    public string Severity { get; set; }
-}
+internal record Dependency(string Name, string Url, string Severity);

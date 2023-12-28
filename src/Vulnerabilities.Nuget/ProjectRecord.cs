@@ -1,9 +1,3 @@
-﻿using System.Text.Json.Serialization;
+﻿namespace Vulnerabilities.Nuget;
 
-namespace Vulnerabilities.Nuget;
-
-internal class ProjectRecord
-{
-    [JsonPropertyName("frameworks")]
-    public List<Framework> Frameworks { get; set; }
-}
+internal record ProjectRecord(List<Framework> Frameworks);

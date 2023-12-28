@@ -37,9 +37,9 @@ public class LicenseScanning : ILicenses
                 {
                     PropertyNameCaseInsensitive = true
                 });
-            var licenses = records!
+            var licenses = records?
                 .Select(record => record.ToLicense())
-                .ToList();
+                .ToList() ?? new List<License>();
 
             return Result<List<License>>.Succeeded(licenses);
         }

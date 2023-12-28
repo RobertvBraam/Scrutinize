@@ -34,9 +34,9 @@ public class LicenseScanning : ILicenses
         {
             var fileStream = File.OpenText(filePath);
             var records = JsonSerializer.Deserialize<Dictionary<string, LicenseCheckRecord>>(fileStream.ReadToEnd());
-            var licenses = records
+            var licenses = records?
                 .SelectMany(record => record.Value.ToLicense(record.Key))
-                .ToList();
+                .ToList() ?? new List<License>();
 
             return Result<List<License>>.Succeeded(licenses);
         }

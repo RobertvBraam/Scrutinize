@@ -5,8 +5,13 @@ namespace Vulnerabilities.Npm;
 
 internal class NpmVulnerabilities
 {
-    public int AuditReportVersion { get; set; }
-    public Dictionary<string, NpmVulnerability> Vulnerabilities { get; set; }
+    public NpmVulnerabilities(Dictionary<string, NpmVulnerability> vulnerabilities)
+    {
+        Vulnerabilities = vulnerabilities;
+    }
+    
+    public int AuditReportVersion { get; init; }
+    public Dictionary<string, NpmVulnerability> Vulnerabilities { get; init; }
 
     public IEnumerable<Vulnerability> ToVulnerabilities()
     {
@@ -17,12 +22,7 @@ internal class NpmVulnerabilities
                 if (element.ValueKind == JsonValueKind.Object)
                 {
                     var dependency = element.Deserialize<Dependency>(new JsonSerializerOptions(){PropertyNameCaseInsensitive = true});
-                    yield return new Vulnerability()
-                    {
-                        DependencyName = dependencyName,
-                        Severity = vulnerability.Severity,
-                        Source = dependency.Url
-                    };
+                    yield return new Vulnerability(dependencyName, vulnerability.Severity, dependency?.Url ?? String.Empty);
                 }
             }
         }
