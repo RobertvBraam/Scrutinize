@@ -3,12 +3,12 @@ using Domain.Models;
 
 namespace Scanning.Licenses.Npm;
 
-public class LicenseCheckRecord
+internal class LicenseCheckRecord
 {
     [JsonPropertyName("licenses")]
-    public string? Licenses { get; set; }
+    internal string? Licenses { get; set; }
 
-    public IEnumerable<License> ToLicense(string fullName)
+    internal IEnumerable<License> ToLicense(string fullName)
     {
         if (string.IsNullOrWhiteSpace(fullName) == false
             && string.IsNullOrWhiteSpace(Licenses) == false)

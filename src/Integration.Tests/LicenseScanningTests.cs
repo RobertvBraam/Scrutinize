@@ -8,6 +8,11 @@ namespace Integration.Tests;
 
 public class LicenseScanningTests
 {
+    public LicenseScanningTests()
+    {
+        TestAppHelper.InitializeTestTools();
+    }
+    
     [Fact]
     public void WhenNugetScanningLicenses_ThenReturnListOfLicenses()
     {
@@ -39,7 +44,7 @@ public class LicenseScanningTests
 
         //Assert
         actual.HasSucceeded.Should().BeTrue();
-        actual.Value.Should().HaveCount(751);
+        actual.Value.Should().HaveCount(772);
         //Two packages have the same name but different license
         actual.Value.Where(x => x.DependencyName == "atob").Should().HaveCount(2).And
             .OnlyHaveUniqueItems(x => x.Type);
