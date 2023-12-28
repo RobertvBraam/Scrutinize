@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Scanning.Licenses.Nuget;
+namespace Scanning.Nuget.Licenses;
 
 internal class LicenseCheckRecord
 {

@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using Domain.Models;
 
-namespace Scanning.Licenses.Npm;
+namespace Scanning.Npm.Licenses;
 
 internal class LicenseCheckRecord
 {

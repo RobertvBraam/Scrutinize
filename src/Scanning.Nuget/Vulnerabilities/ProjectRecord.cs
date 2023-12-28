@@ -1,3 +1,3 @@
-﻿namespace Vulnerabilities.Nuget;
+﻿namespace Scanning.Nuget.Vulnerabilities;
 
 internal record ProjectRecord(List<Framework> Frameworks);

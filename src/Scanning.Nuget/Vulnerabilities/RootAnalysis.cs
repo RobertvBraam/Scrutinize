@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Vulnerabilities.Nuget;
+namespace Scanning.Nuget.Vulnerabilities;
 
 internal class RootAnalysis
 {

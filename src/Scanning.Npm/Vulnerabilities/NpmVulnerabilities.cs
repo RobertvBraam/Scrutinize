@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using Domain.Models;
 
-namespace Vulnerabilities.Npm;
+namespace Scanning.Npm.Vulnerabilities;
 
 internal class NpmVulnerabilities
 {

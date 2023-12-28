@@ -24,10 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj"/>
-        <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj"/>
-        <ProjectReference Include="..\Vulnerabilities.Npm\Vulnerabilities.Npm.csproj"/>
-        <ProjectReference Include="..\Vulnerabilities.Nuget\Vulnerabilities.Nuget.csproj"/>
+        <ProjectReference Include="..\Scanning.Npm\Scanning.Npm.csproj" />
+        <ProjectReference Include="..\Scanning.Nuget\Scanning.Nuget.csproj" />
     </ItemGroup>
 
     <ItemGroup>
