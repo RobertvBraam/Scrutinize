@@ -2,6 +2,6 @@
 
 internal class TopLevelPackage
 {
-    internal string Id { get; set; }
-    internal List<VulnerabilityRecord> Vulnerabilities { get; set; }
+    public string Id { get; set; }
+    public List<VulnerabilityRecord> Vulnerabilities { get; set; }
 }

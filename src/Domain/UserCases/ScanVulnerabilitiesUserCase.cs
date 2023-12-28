@@ -15,6 +15,12 @@ public class ScanVulnerabilitiesUserCase
     public Result<List<Vulnerability>> Execute(string sourcePath)
     {
         var vulnerabilities = _vulnerabilities.Scan(sourcePath);
+        
+        if (vulnerabilities.HasFailed)
+        {
+            return Result<List<Vulnerability>>.Failed(vulnerabilities.FailureReason);
+        }
+        
         return Result<List<Vulnerability>>.Succeeded(vulnerabilities.Value);
     }
 }

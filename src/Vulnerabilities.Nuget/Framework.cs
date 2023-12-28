@@ -2,6 +2,6 @@
 
 internal class Framework
 {
-    internal List<TopLevelPackage> TopLevelPackages { get; set; }
-    internal List<TransitivePackage> TransitivePackages { get; set; }
+    public List<TopLevelPackage> TopLevelPackages { get; set; }
+    public List<TransitivePackage> TransitivePackages { get; set; }
 }
