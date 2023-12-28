@@ -10,9 +10,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="FluentAssertions" Version="6.12.0" />
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
-        <PackageReference Include="xunit" Version="2.4.2" />
+        <PackageReference Include="FluentAssertions" Version="6.12.0"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0"/>
+        <PackageReference Include="xunit" Version="2.4.2"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
@@ -24,22 +24,25 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj" />
-      <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj" />
-      <ProjectReference Include="..\Vulnerabilities.Npm\Vulnerabilities.Npm.csproj" />
-      <ProjectReference Include="..\Vulnerabilities.Nuget\Vulnerabilities.Nuget.csproj" />
+        <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj"/>
+        <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj"/>
+        <ProjectReference Include="..\Vulnerabilities.Npm\Vulnerabilities.Npm.csproj"/>
+        <ProjectReference Include="..\Vulnerabilities.Nuget\Vulnerabilities.Nuget.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="TestApp\obj\**" />
+        <!-- only inlcude the files that are needed for the integration tests -->
+        <Content Include="TestApp\Api.csproj">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="TestApp\package.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="TestApp\package-lock.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Compile Remove="TestApp\**"/>
+        <EmbeddedResource Remove="TestApp\**"/>
+        <None Remove="TestApp\**"/>
     </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Remove="TestApp\obj\**" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="TestApp\obj\**" />
-    </ItemGroup>
-
 </Project>
