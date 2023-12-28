@@ -6,9 +6,9 @@ namespace Vulnerabilities.Nuget;
 internal class RootAnalysis
 {
     [JsonPropertyName("projects")]
-    internal List<ProjectRecord> Projects { get; set; }
+    public List<ProjectRecord> Projects { get; set; }
 
-    internal List<Vulnerability> ToVulnarabilties()
+    public List<Vulnerability> ToVulnarabilties()
     {
         var vulnerabilities = new List<Vulnerability>();
 

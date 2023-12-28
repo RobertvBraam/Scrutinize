@@ -15,6 +15,12 @@ public class ScanLicensesUserCase
     public Result<List<License>> Execute(string sourcePath)
     {
         var licenses = _licenses.Scan(sourcePath);
+        
+        if (licenses.HasFailed)
+        {
+            return Result<List<License>>.Failed(licenses.FailureReason);
+        }
+        
         return Result<List<License>>.Succeeded(licenses.Value);
     }
 }

@@ -4,11 +4,11 @@ namespace Scanning.Licenses.Nuget;
 
 internal class LicenseCheckRecord
 {
-    internal string PackageName { get; set; }
-    internal string PackageVersion { get; set; }
-    internal string LicenseType { get; set; }
+    public string PackageName { get; set; }
+    public string PackageVersion { get; set; }
+    public string LicenseType { get; set; }
 
-    internal License ToLicense()
+    public License ToLicense()
     {
         return new License()
         {

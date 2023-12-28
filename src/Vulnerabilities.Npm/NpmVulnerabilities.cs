@@ -5,10 +5,10 @@ namespace Vulnerabilities.Npm;
 
 internal class NpmVulnerabilities
 {
-    internal int AuditReportVersion { get; set; }
-    internal Dictionary<string, NpmVulnerability> Vulnerabilities { get; set; }
+    public int AuditReportVersion { get; set; }
+    public Dictionary<string, NpmVulnerability> Vulnerabilities { get; set; }
 
-    internal IEnumerable<Vulnerability> ToVulnerabilities()
+    public IEnumerable<Vulnerability> ToVulnerabilities()
     {
         foreach ((string dependencyName, NpmVulnerability vulnerability) in Vulnerabilities)
         {

@@ -6,9 +6,9 @@ namespace Scanning.Licenses.Npm;
 internal class LicenseCheckRecord
 {
     [JsonPropertyName("licenses")]
-    internal string? Licenses { get; set; }
+    public string? Licenses { get; set; }
 
-    internal IEnumerable<License> ToLicense(string fullName)
+    public IEnumerable<License> ToLicense(string fullName)
     {
         if (string.IsNullOrWhiteSpace(fullName) == false
             && string.IsNullOrWhiteSpace(Licenses) == false)
