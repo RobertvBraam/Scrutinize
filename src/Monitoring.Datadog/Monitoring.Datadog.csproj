@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Datadog.Trace" Version="2.44.0" />
+      <PackageReference Include="DogStatsD-CSharp-Client" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>
