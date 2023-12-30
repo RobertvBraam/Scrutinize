@@ -1,6 +1,6 @@
 ﻿using Domain.Results;
 
-namespace Domain.Models;
+namespace Domain.Vulnerabilities;
 
 public interface IVulnerabilities
 {

@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-using Domain.Models;
+using Domain.Licenses;
 
 namespace Scanning.Npm.Licenses;
 

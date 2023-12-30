@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Text.Json;
-using Domain.Models;
+using Domain.Licenses;
 using Domain.Results;
 
 namespace Scanning.Nuget.Licenses;

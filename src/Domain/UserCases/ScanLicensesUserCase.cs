@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using Domain.Licenses;
 using Domain.Results;
 
 namespace Domain.UserCases;

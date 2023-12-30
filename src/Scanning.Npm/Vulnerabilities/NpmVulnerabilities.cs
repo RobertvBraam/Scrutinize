@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Domain.Models;
+using Domain.Vulnerabilities;
 
 namespace Scanning.Npm.Vulnerabilities;
 

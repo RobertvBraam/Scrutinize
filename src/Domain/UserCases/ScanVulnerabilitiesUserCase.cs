@@ -1,5 +1,5 @@
-﻿using Domain.Models;
-using Domain.Results;
+﻿using Domain.Results;
+using Domain.Vulnerabilities;
 
 namespace Domain.UserCases;
 

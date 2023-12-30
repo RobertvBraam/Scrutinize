@@ -1,6 +1,6 @@
 ﻿using Domain.Results;
 
-namespace Domain.Models;
+namespace Domain.Licenses;
 
 public interface ILicenses
 {

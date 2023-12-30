@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using Domain.Licenses;
 
 namespace Scanning.Nuget.Licenses;
 

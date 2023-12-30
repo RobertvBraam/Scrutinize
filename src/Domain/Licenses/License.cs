@@ -1,4 +1,4 @@
-﻿namespace Domain.Models;
+﻿namespace Domain.Licenses;
 
 public class License
 {

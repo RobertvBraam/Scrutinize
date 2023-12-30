@@ -3,5 +3,4 @@
 public interface IDomainFailure
 {
     string Message { get; }
-    static abstract IDomainFailure Create();
 }
