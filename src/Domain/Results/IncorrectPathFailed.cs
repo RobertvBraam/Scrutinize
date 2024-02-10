@@ -6,7 +6,7 @@ public class IncorrectPathFailed : IDomainFailure
     {
         
     }
-    public string IncorrectPath {get; private set;} = null!;
+    public string IncorrectPath { get; private set; } = null!;
     public string Message => "Path provided does not exist or does not contain a supported project (package.json, *.sln or *.csproj)";
     public static IDomainFailure Create(string path)
     {

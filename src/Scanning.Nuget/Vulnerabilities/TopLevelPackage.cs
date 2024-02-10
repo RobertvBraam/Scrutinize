@@ -1,3 +1,3 @@
 ﻿namespace Scanning.Nuget.Vulnerabilities;
 
-internal record TopLevelPackage(string Id, List<VulnerabilityRecord> Vulnerabilities);
+internal record TopLevelPackage(string Id, string ResolvedVersion, List<VulnerabilityRecord> Vulnerabilities);

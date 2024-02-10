@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using Domain;
 using Domain.Licenses;
 using Domain.Results;
 using Npm = Scanning.Npm.Licenses;
@@ -24,7 +25,7 @@ public class LicenseFactory
         
         if (path.EndsWith("package.json"))
         {
-            return Result<ILicenses>.Succeeded(new Npm.LicenseScanning(isWindows));
+            return Result<ILicenses>.Succeeded(new Npm.LicenseScanning(isWindows, new Logger<Npm.LicenseScanning>()));
         }
 
         return Result<ILicenses>.Failed(IncorrectPathFailed.Create(path));

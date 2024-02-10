@@ -1,0 +1,262 @@
+﻿[
+  {
+    "Name": "AspNetCore.HealthChecks.Uris",
+    "Licenses": [
+      {
+        "Version": "6.0.3",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "AutoMapper",
+    "Licenses": [
+      {
+        "Version": "12.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "AutoMapper.Extensions.Microsoft.DependencyInjection",
+    "Licenses": [
+      {
+        "Version": "12.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Azure.Identity",
+    "Licenses": [
+      {
+        "Version": "1.8.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": [
+      {
+        "Range": "1.8.2",
+        "Severity": "High",
+        "Source": "https://github.com/advisories/GHSA-5mfx-4wcx-rv27"
+      }
+    ]
+  },
+  {
+    "Name": "EventFeed.AspNetCore",
+    "Licenses": [
+      {
+        "Version": "0.0.1-alpha",
+        "Type": "LICENSE"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "FluentMigrator.Runner",
+    "Licenses": [
+      {
+        "Version": "3.3.2",
+        "Type": ""
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+    "Licenses": [
+      {
+        "Version": "7.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.AspNetCore.AzureAppServices.HostingStartup",
+    "Licenses": [
+      {
+        "Version": "7.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
+    "Licenses": [
+      {
+        "Version": "7.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.AspNetCore.SpaServices.Extensions",
+    "Licenses": [
+      {
+        "Version": "7.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.Azure.AppConfiguration.AspNetCore",
+    "Licenses": [
+      {
+        "Version": "6.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.Bcl.AsyncInterfaces",
+    "Licenses": [
+      {
+        "Version": "7.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.FeatureManagement",
+    "Licenses": [
+      {
+        "Version": "2.5.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.TypeScript.MSBuild",
+    "Licenses": [
+      {
+        "Version": "5.0.4",
+        "Type": "License.txt"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "NetEscapades.AspNetCore.SecurityHeaders",
+    "Licenses": [
+      {
+        "Version": "0.18.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "NSwag.AspNetCore",
+    "Licenses": [
+      {
+        "Version": "13.18.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "NSwag.SwaggerGeneration",
+    "Licenses": [
+      {
+        "Version": "12.3.1",
+        "Type": ""
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "NWebsec.AspNetCore.Middleware",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "OpenTelemetry.Extensions.Hosting",
+    "Licenses": [
+      {
+        "Version": "1.5.0-alpha.2",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "System.Net.Http.Json",
+    "Licenses": [
+      {
+        "Version": "7.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "Microsoft.Data.SqlClient",
+    "Licenses": [],
+    "Vulnerabilities": [
+      {
+        "Range": "2.1.2",
+        "Severity": "High",
+        "Source": "https://github.com/advisories/GHSA-98g6-xh36-x2p7"
+      }
+    ]
+  },
+  {
+    "Name": "Microsoft.IdentityModel.JsonWebTokens",
+    "Licenses": [],
+    "Vulnerabilities": [
+      {
+        "Range": "6.15.1",
+        "Severity": "Moderate",
+        "Source": "https://github.com/advisories/GHSA-8g9c-28fc-mcx2"
+      },
+      {
+        "Range": "6.15.1",
+        "Severity": "Moderate",
+        "Source": "https://github.com/advisories/GHSA-59j7-ghrg-fj52"
+      }
+    ]
+  },
+  {
+    "Name": "System.Drawing.Common",
+    "Licenses": [],
+    "Vulnerabilities": [
+      {
+        "Range": "4.7.0",
+        "Severity": "Critical",
+        "Source": "https://github.com/advisories/GHSA-rxg9-xrhp-64gj"
+      }
+    ]
+  },
+  {
+    "Name": "System.IdentityModel.Tokens.Jwt",
+    "Licenses": [],
+    "Vulnerabilities": [
+      {
+        "Range": "6.15.1",
+        "Severity": "Moderate",
+        "Source": "https://github.com/advisories/GHSA-8g9c-28fc-mcx2"
+      },
+      {
+        "Range": "6.15.1",
+        "Severity": "Moderate",
+        "Source": "https://github.com/advisories/GHSA-59j7-ghrg-fj52"
+      }
+    ]
+  }
+]

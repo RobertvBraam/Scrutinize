@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Text.Json;
+using Domain.Dependencies;
 using Domain.Licenses;
 using Domain.Results;
 
@@ -15,16 +16,17 @@ public class LicenseScanning : ILicenses
         _isWindows = isWindows;
     }
 
-    public Result<List<License>> Scan(string sourcePath)
+    public Result<List<Dependency>> Scan(string sourcePath)
     {
         if (!Directory.Exists(sourcePath))
         {
-            return Result<List<License>>.Failed(InitializationFailed.Create());
+            return Result<List<Dependency>>.Failed(InitializationFailed.Create());
         }
         var filePath = $"{sourcePath}/{Filename}";
         var process = StartCmdProcess(sourcePath);  
         
         process.StandardInput.WriteLine("dotnet restore");
+        //TODO: Add a flag to include transitive dependencies (at the moment it's broken in the tool)
         process.StandardInput.WriteLine($"dotnet tool run dotnet-project-licenses -i {sourcePath} -j --outfile {filePath}");
         process.StandardInput.WriteLine("exit");
         process.WaitForExit();
@@ -37,15 +39,15 @@ public class LicenseScanning : ILicenses
                 {
                     PropertyNameCaseInsensitive = true
                 });
-            var licenses = records?
-                .Select(record => record.ToLicense())
-                .ToList() ?? new List<License>();
+            var dependencies = records?
+                .Select(record => record.ToDependency())
+                .ToList() ?? new List<Dependency>();
 
-            return Result<List<License>>.Succeeded(licenses);
+            return Result<List<Dependency>>.Succeeded(dependencies);
         }
         
         //TODO: Setup a good Error object
-        return Result<List<License>>.Failed(InitializationFailed.Create());
+        return Result<List<Dependency>>.Failed(InitializationFailed.Create());
     }
 
     private Process StartCmdProcess(string processDirectory)

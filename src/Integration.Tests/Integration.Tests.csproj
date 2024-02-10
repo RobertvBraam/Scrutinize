@@ -12,6 +12,7 @@
     <ItemGroup>
         <PackageReference Include="FluentAssertions" Version="6.12.0"/>
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0"/>
+        <PackageReference Include="Snapshooter.Xunit" Version="0.14.1" />
         <PackageReference Include="xunit" Version="2.4.2"/>
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -24,6 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\Host.Console\Host.Console.csproj" />
         <ProjectReference Include="..\Scanning.Npm\Scanning.Npm.csproj" />
         <ProjectReference Include="..\Scanning.Nuget\Scanning.Nuget.csproj" />
     </ItemGroup>
@@ -42,5 +44,9 @@
         <Compile Remove="TestApp\**"/>
         <EmbeddedResource Remove="TestApp\**"/>
         <None Remove="TestApp\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="__snapshots__\" />
     </ItemGroup>
 </Project>

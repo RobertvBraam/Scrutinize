@@ -1,0 +1,6735 @@
+﻿[
+  {
+    "Name": "@ampproject/remapping",
+    "Licenses": [
+      {
+        "Version": "2.2.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/code-frame",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/compat-data",
+    "Licenses": [
+      {
+        "Version": "7.23.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/core",
+    "Licenses": [
+      {
+        "Version": "7.23.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/generator",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-compilation-targets",
+    "Licenses": [
+      {
+        "Version": "7.22.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-environment-visitor",
+    "Licenses": [
+      {
+        "Version": "7.22.20",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-function-name",
+    "Licenses": [
+      {
+        "Version": "7.23.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-hoist-variables",
+    "Licenses": [
+      {
+        "Version": "7.22.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-module-imports",
+    "Licenses": [
+      {
+        "Version": "7.22.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-module-transforms",
+    "Licenses": [
+      {
+        "Version": "7.23.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-plugin-utils",
+    "Licenses": [
+      {
+        "Version": "7.22.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-simple-access",
+    "Licenses": [
+      {
+        "Version": "7.22.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-split-export-declaration",
+    "Licenses": [
+      {
+        "Version": "7.22.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-string-parser",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-validator-identifier",
+    "Licenses": [
+      {
+        "Version": "7.22.20",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helper-validator-option",
+    "Licenses": [
+      {
+        "Version": "7.22.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/helpers",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/highlight",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/parser",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-async-generators",
+    "Licenses": [
+      {
+        "Version": "7.8.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-bigint",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-class-properties",
+    "Licenses": [
+      {
+        "Version": "7.12.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-import-meta",
+    "Licenses": [
+      {
+        "Version": "7.10.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-json-strings",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-logical-assignment-operators",
+    "Licenses": [
+      {
+        "Version": "7.10.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-nullish-coalescing-operator",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-numeric-separator",
+    "Licenses": [
+      {
+        "Version": "7.10.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-object-rest-spread",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-optional-catch-binding",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-optional-chaining",
+    "Licenses": [
+      {
+        "Version": "7.8.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/plugin-syntax-top-level-await",
+    "Licenses": [
+      {
+        "Version": "7.14.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/template",
+    "Licenses": [
+      {
+        "Version": "7.22.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/traverse",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@babel/types",
+    "Licenses": [
+      {
+        "Version": "7.23.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@bcoe/v8-coverage",
+    "Licenses": [
+      {
+        "Version": "0.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@cnakazawa/watch",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@contentful/rich-text-html-renderer",
+    "Licenses": [
+      {
+        "Version": "14.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@contentful/rich-text-types",
+    "Licenses": [
+      {
+        "Version": "14.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@datadog/browser-core",
+    "Licenses": [
+      {
+        "Version": "4.50.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@datadog/browser-rum-core",
+    "Licenses": [
+      {
+        "Version": "4.50.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@datadog/browser-rum",
+    "Licenses": [
+      {
+        "Version": "4.50.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@isaacs/cliui",
+    "Licenses": [
+      {
+        "Version": "8.0.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@istanbuljs/load-nyc-config",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@istanbuljs/schema",
+    "Licenses": [
+      {
+        "Version": "0.1.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/console",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/core",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/environment",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/fake-timers",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/globals",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/reporters",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/source-map",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/test-result",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/test-sequencer",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/transform",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jest/types",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/gen-mapping",
+    "Licenses": [
+      {
+        "Version": "0.3.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/resolve-uri",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/set-array",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/source-map",
+    "Licenses": [
+      {
+        "Version": "0.3.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/sourcemap-codec",
+    "Licenses": [
+      {
+        "Version": "1.4.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@jridgewell/trace-mapping",
+    "Licenses": [
+      {
+        "Version": "0.3.20",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@nuxtjs/svg",
+    "Licenses": [
+      {
+        "Version": "0.4.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@one-ini/wasm",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@pkgjs/parseargs",
+    "Licenses": [
+      {
+        "Version": "0.11.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@sinonjs/commons",
+    "Licenses": [
+      {
+        "Version": "1.8.6",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@sinonjs/fake-timers",
+    "Licenses": [
+      {
+        "Version": "6.0.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@tootallnate/once",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/babel__core",
+    "Licenses": [
+      {
+        "Version": "7.20.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/babel__generator",
+    "Licenses": [
+      {
+        "Version": "7.6.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/babel__template",
+    "Licenses": [
+      {
+        "Version": "7.4.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/babel__traverse",
+    "Licenses": [
+      {
+        "Version": "7.20.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/eslint-scope",
+    "Licenses": [
+      {
+        "Version": "3.7.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/eslint",
+    "Licenses": [
+      {
+        "Version": "8.44.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/estree",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/graceful-fs",
+    "Licenses": [
+      {
+        "Version": "4.1.9",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/istanbul-lib-coverage",
+    "Licenses": [
+      {
+        "Version": "2.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/istanbul-lib-report",
+    "Licenses": [
+      {
+        "Version": "3.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/istanbul-reports",
+    "Licenses": [
+      {
+        "Version": "3.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/json-schema",
+    "Licenses": [
+      {
+        "Version": "7.0.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/node",
+    "Licenses": [
+      {
+        "Version": "20.9.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/normalize-package-data",
+    "Licenses": [
+      {
+        "Version": "2.4.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/prettier",
+    "Licenses": [
+      {
+        "Version": "2.7.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/q",
+    "Licenses": [
+      {
+        "Version": "1.5.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/stack-utils",
+    "Licenses": [
+      {
+        "Version": "2.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/strip-bom",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/strip-json-comments",
+    "Licenses": [
+      {
+        "Version": "0.0.30",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/yargs-parser",
+    "Licenses": [
+      {
+        "Version": "21.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@types/yargs",
+    "Licenses": [
+      {
+        "Version": "15.0.19",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@vue/compiler-sfc",
+    "Licenses": [
+      {
+        "Version": "2.7.15",
+        "Type": "MIT*"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@vuejs-community/vue-filter-pluralize",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/ast",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/floating-point-hex-parser",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/helper-api-error",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/helper-buffer",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/helper-numbers",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/helper-wasm-bytecode",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/helper-wasm-section",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/ieee754",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/leb128",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/utf8",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/wasm-edit",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/wasm-gen",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/wasm-opt",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/wasm-parser",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@webassemblyjs/wast-printer",
+    "Licenses": [
+      {
+        "Version": "1.11.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@xtuc/ieee754",
+    "Licenses": [
+      {
+        "Version": "1.2.0",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "@xtuc/long",
+    "Licenses": [
+      {
+        "Version": "4.2.2",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "abab",
+    "Licenses": [
+      {
+        "Version": "2.0.6",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "abbrev",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "acorn-globals",
+    "Licenses": [
+      {
+        "Version": "6.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "acorn-import-assertions",
+    "Licenses": [
+      {
+        "Version": "1.9.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "acorn-walk",
+    "Licenses": [
+      {
+        "Version": "7.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "acorn",
+    "Licenses": [
+      {
+        "Version": "8.11.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "agent-base",
+    "Licenses": [
+      {
+        "Version": "6.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ajv-keywords",
+    "Licenses": [
+      {
+        "Version": "3.5.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ajv",
+    "Licenses": [
+      {
+        "Version": "6.12.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ansi-escapes",
+    "Licenses": [
+      {
+        "Version": "4.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ansi-regex",
+    "Licenses": [
+      {
+        "Version": "5.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ansi-styles",
+    "Licenses": [
+      {
+        "Version": "3.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "anymatch",
+    "Licenses": [
+      {
+        "Version": "3.1.3",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "argparse",
+    "Licenses": [
+      {
+        "Version": "1.0.10",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "arr-diff",
+    "Licenses": [
+      {
+        "Version": "4.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "arr-flatten",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "arr-union",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "array-buffer-byte-length",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "array-find-index",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "array-unique",
+    "Licenses": [
+      {
+        "Version": "0.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "array.prototype.reduce",
+    "Licenses": [
+      {
+        "Version": "1.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "arraybuffer.prototype.slice",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "asap",
+    "Licenses": [
+      {
+        "Version": "2.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "assign-symbols",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "asynckit",
+    "Licenses": [
+      {
+        "Version": "0.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "atob",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "atob",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "available-typed-arrays",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-code-frame",
+    "Licenses": [
+      {
+        "Version": "6.26.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-core",
+    "Licenses": [
+      {
+        "Version": "7.0.0-bridge.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-jest",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-messages",
+    "Licenses": [
+      {
+        "Version": "6.23.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-plugin-istanbul",
+    "Licenses": [
+      {
+        "Version": "6.1.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-plugin-jest-hoist",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-plugin-transform-es2015-modules-commonjs",
+    "Licenses": [
+      {
+        "Version": "6.26.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-plugin-transform-strict-mode",
+    "Licenses": [
+      {
+        "Version": "6.24.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-preset-current-node-syntax",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-preset-jest",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-runtime",
+    "Licenses": [
+      {
+        "Version": "6.26.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-template",
+    "Licenses": [
+      {
+        "Version": "6.26.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-traverse",
+    "Licenses": [
+      {
+        "Version": "6.26.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babel-types",
+    "Licenses": [
+      {
+        "Version": "6.26.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "babylon",
+    "Licenses": [
+      {
+        "Version": "6.18.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "balanced-match",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "base",
+    "Licenses": [
+      {
+        "Version": "0.11.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "big.js",
+    "Licenses": [
+      {
+        "Version": "5.2.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bindings",
+    "Licenses": [
+      {
+        "Version": "1.5.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bluebird",
+    "Licenses": [
+      {
+        "Version": "3.7.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "boolbase",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bourbon",
+    "Licenses": [
+      {
+        "Version": "7.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "brace-expansion",
+    "Licenses": [
+      {
+        "Version": "1.1.11",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "braces",
+    "Licenses": [
+      {
+        "Version": "3.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "browser-process-hrtime",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "browserslist",
+    "Licenses": [
+      {
+        "Version": "4.22.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bs-logger",
+    "Licenses": [
+      {
+        "Version": "0.2.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bser",
+    "Licenses": [
+      {
+        "Version": "2.1.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "buefy",
+    "Licenses": [
+      {
+        "Version": "0.9.25",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "buffer-from",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "bulma",
+    "Licenses": [
+      {
+        "Version": "0.9.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cache-base",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "call-bind",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "callsites",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "camelcase",
+    "Licenses": [
+      {
+        "Version": "5.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "caniuse-lite",
+    "Licenses": [
+      {
+        "Version": "1.0.30001563",
+        "Type": "CC-BY-4.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "capture-exit",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "chalk",
+    "Licenses": [
+      {
+        "Version": "2.4.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "char-regex",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "chrome-trace-event",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ci-info",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cjs-module-lexer",
+    "Licenses": [
+      {
+        "Version": "0.6.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "class-utils",
+    "Licenses": [
+      {
+        "Version": "0.3.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cliui",
+    "Licenses": [
+      {
+        "Version": "6.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "clone",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "co",
+    "Licenses": [
+      {
+        "Version": "4.6.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "coa",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "collect-v8-coverage",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "collection-visit",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "color-convert",
+    "Licenses": [
+      {
+        "Version": "1.9.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "color-name",
+    "Licenses": [
+      {
+        "Version": "1.1.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "combined-stream",
+    "Licenses": [
+      {
+        "Version": "1.0.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "commander",
+    "Licenses": [
+      {
+        "Version": "10.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "component-emitter",
+    "Licenses": [
+      {
+        "Version": "1.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "concat-map",
+    "Licenses": [
+      {
+        "Version": "0.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "config-chain",
+    "Licenses": [
+      {
+        "Version": "1.1.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "convert-source-map",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "copy-descriptor",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "core-js",
+    "Licenses": [
+      {
+        "Version": "2.6.12",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "core-util-is",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cross-spawn",
+    "Licenses": [
+      {
+        "Version": "7.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "css-select-base-adapter",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "css-select",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": [
+      {
+        "Range": "<2.0.1",
+        "Severity": "high",
+        "Source": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr"
+      }
+    ]
+  },
+  {
+    "Name": "css-tree",
+    "Licenses": [
+      {
+        "Version": "1.0.0-alpha.37",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "css-what",
+    "Licenses": [
+      {
+        "Version": "3.4.2",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "css",
+    "Licenses": [
+      {
+        "Version": "2.2.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "csso",
+    "Licenses": [
+      {
+        "Version": "4.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cssom",
+    "Licenses": [
+      {
+        "Version": "0.4.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "cssstyle",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "csstype",
+    "Licenses": [
+      {
+        "Version": "3.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "data-urls",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "de-indent",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "deasync",
+    "Licenses": [
+      {
+        "Version": "0.1.29",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "debug",
+    "Licenses": [
+      {
+        "Version": "4.3.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "debuglog",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "decamelize",
+    "Licenses": [
+      {
+        "Version": "1.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "decimal.js",
+    "Licenses": [
+      {
+        "Version": "10.4.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "decode-uri-component",
+    "Licenses": [
+      {
+        "Version": "0.2.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "deepmerge",
+    "Licenses": [
+      {
+        "Version": "4.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "define-data-property",
+    "Licenses": [
+      {
+        "Version": "1.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "define-properties",
+    "Licenses": [
+      {
+        "Version": "1.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "define-property",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "delayed-stream",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "detect-newline",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "dezalgo",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "diff-sequences",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "dom-serializer",
+    "Licenses": [
+      {
+        "Version": "0.2.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "domelementtype",
+    "Licenses": [
+      {
+        "Version": "1.3.1",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "domexception",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "domhandler",
+    "Licenses": [
+      {
+        "Version": "2.4.2",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "domready",
+    "Licenses": [
+      {
+        "Version": "1.0.8",
+        "Type": "MIT*"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "domutils",
+    "Licenses": [
+      {
+        "Version": "1.7.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "eastasianwidth",
+    "Licenses": [
+      {
+        "Version": "0.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "editorconfig",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "electron-to-chromium",
+    "Licenses": [
+      {
+        "Version": "1.4.590",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "emittery",
+    "Licenses": [
+      {
+        "Version": "0.7.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "emoji-regex",
+    "Licenses": [
+      {
+        "Version": "8.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "emojis-list",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "end-of-stream",
+    "Licenses": [
+      {
+        "Version": "1.4.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "enhanced-resolve",
+    "Licenses": [
+      {
+        "Version": "4.5.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "entities",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "errno",
+    "Licenses": [
+      {
+        "Version": "0.1.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "error-ex",
+    "Licenses": [
+      {
+        "Version": "1.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "es-abstract",
+    "Licenses": [
+      {
+        "Version": "1.22.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "es-array-method-boxes-properly",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "es-module-lexer",
+    "Licenses": [
+      {
+        "Version": "1.4.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "es-set-tostringtag",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "es-to-primitive",
+    "Licenses": [
+      {
+        "Version": "1.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "escalade",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "escape-html",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "escape-string-regexp",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "escodegen",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "eslint-scope",
+    "Licenses": [
+      {
+        "Version": "5.1.1",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "esprima",
+    "Licenses": [
+      {
+        "Version": "4.0.1",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "esrecurse",
+    "Licenses": [
+      {
+        "Version": "4.3.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "estraverse",
+    "Licenses": [
+      {
+        "Version": "5.3.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "esutils",
+    "Licenses": [
+      {
+        "Version": "2.0.3",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "events",
+    "Licenses": [
+      {
+        "Version": "3.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "exec-sh",
+    "Licenses": [
+      {
+        "Version": "0.3.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "execa",
+    "Licenses": [
+      {
+        "Version": "4.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "exit",
+    "Licenses": [
+      {
+        "Version": "0.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "expand-brackets",
+    "Licenses": [
+      {
+        "Version": "2.1.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "expect",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "extend-shallow",
+    "Licenses": [
+      {
+        "Version": "3.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "extglob",
+    "Licenses": [
+      {
+        "Version": "2.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "extract-from-css",
+    "Licenses": [
+      {
+        "Version": "0.4.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fast-deep-equal",
+    "Licenses": [
+      {
+        "Version": "3.1.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fast-json-stable-stringify",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fb-watchman",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "file-loader",
+    "Licenses": [
+      {
+        "Version": "6.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "file-uri-to-path",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fill-range",
+    "Licenses": [
+      {
+        "Version": "7.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "find-babel-config",
+    "Licenses": [
+      {
+        "Version": "1.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": [
+      {
+        "Range": "<1.0.2",
+        "Severity": "high",
+        "Source": "https://github.com/advisories/GHSA-9c47-m6qq-7p4h"
+      }
+    ]
+  },
+  {
+    "Name": "find-up",
+    "Licenses": [
+      {
+        "Version": "4.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "flatted",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "for-each",
+    "Licenses": [
+      {
+        "Version": "0.3.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "for-in",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "foreground-child",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "form-data",
+    "Licenses": [
+      {
+        "Version": "3.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fragment-cache",
+    "Licenses": [
+      {
+        "Version": "0.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "fs.realpath",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "function-bind",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "function.prototype.name",
+    "Licenses": [
+      {
+        "Version": "1.1.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "functions-have-names",
+    "Licenses": [
+      {
+        "Version": "1.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "gensync",
+    "Licenses": [
+      {
+        "Version": "1.0.0-beta.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-caller-file",
+    "Licenses": [
+      {
+        "Version": "2.0.5",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-intrinsic",
+    "Licenses": [
+      {
+        "Version": "1.2.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-package-type",
+    "Licenses": [
+      {
+        "Version": "0.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-stream",
+    "Licenses": [
+      {
+        "Version": "5.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-symbol-description",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "get-value",
+    "Licenses": [
+      {
+        "Version": "2.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "glob-to-regexp",
+    "Licenses": [
+      {
+        "Version": "0.4.1",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "glob",
+    "Licenses": [
+      {
+        "Version": "7.2.3",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "globals",
+    "Licenses": [
+      {
+        "Version": "11.12.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "globalthis",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "gopd",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "graceful-fs",
+    "Licenses": [
+      {
+        "Version": "4.2.11",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "growly",
+    "Licenses": [
+      {
+        "Version": "1.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-ansi",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-bigints",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-flag",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-property-descriptors",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-proto",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-symbols",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-tostringtag",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-value",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "has-values",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "hasown",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "he",
+    "Licenses": [
+      {
+        "Version": "1.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "hosted-git-info",
+    "Licenses": [
+      {
+        "Version": "2.8.9",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "html-encoding-sniffer",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "html-escaper",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "htmlparser2",
+    "Licenses": [
+      {
+        "Version": "3.10.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "http-proxy-agent",
+    "Licenses": [
+      {
+        "Version": "4.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "https-proxy-agent",
+    "Licenses": [
+      {
+        "Version": "5.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "human-signals",
+    "Licenses": [
+      {
+        "Version": "1.1.1",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "iconv-lite",
+    "Licenses": [
+      {
+        "Version": "0.4.24",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "image-size",
+    "Licenses": [
+      {
+        "Version": "0.5.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "import-local",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "imurmurhash",
+    "Licenses": [
+      {
+        "Version": "0.1.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "inflight",
+    "Licenses": [
+      {
+        "Version": "1.0.6",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "inherits",
+    "Licenses": [
+      {
+        "Version": "2.0.4",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ini",
+    "Licenses": [
+      {
+        "Version": "1.3.8",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "internal-slot",
+    "Licenses": [
+      {
+        "Version": "1.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "invariant",
+    "Licenses": [
+      {
+        "Version": "2.2.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-accessor-descriptor",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-array-buffer",
+    "Licenses": [
+      {
+        "Version": "3.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-arrayish",
+    "Licenses": [
+      {
+        "Version": "0.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-bigint",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-boolean-object",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-buffer",
+    "Licenses": [
+      {
+        "Version": "1.1.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-callable",
+    "Licenses": [
+      {
+        "Version": "1.2.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-ci",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-core-module",
+    "Licenses": [
+      {
+        "Version": "2.13.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-data-descriptor",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-date-object",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-descriptor",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-docker",
+    "Licenses": [
+      {
+        "Version": "2.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-extendable",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-fullwidth-code-point",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-generator-fn",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-negative-zero",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-number-object",
+    "Licenses": [
+      {
+        "Version": "1.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-number",
+    "Licenses": [
+      {
+        "Version": "7.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-plain-obj",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-plain-object",
+    "Licenses": [
+      {
+        "Version": "2.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-potential-custom-element-name",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-regex",
+    "Licenses": [
+      {
+        "Version": "1.1.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-shared-array-buffer",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-stream",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-string",
+    "Licenses": [
+      {
+        "Version": "1.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-symbol",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-typed-array",
+    "Licenses": [
+      {
+        "Version": "1.1.12",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-typedarray",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-weakref",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-windows",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "is-wsl",
+    "Licenses": [
+      {
+        "Version": "2.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "isarray",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "isexe",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "isobject",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "istanbul-lib-coverage",
+    "Licenses": [
+      {
+        "Version": "3.2.2",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "istanbul-lib-instrument",
+    "Licenses": [
+      {
+        "Version": "4.0.3",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "istanbul-lib-report",
+    "Licenses": [
+      {
+        "Version": "3.0.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "istanbul-lib-source-maps",
+    "Licenses": [
+      {
+        "Version": "4.0.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "istanbul-reports",
+    "Licenses": [
+      {
+        "Version": "3.1.6",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jackspeak",
+    "Licenses": [
+      {
+        "Version": "2.3.6",
+        "Type": "BlueOak-1.0.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-changed-files",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-cli",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-config",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-diff",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-docblock",
+    "Licenses": [
+      {
+        "Version": "26.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-each",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-environment-jsdom",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-environment-node",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-get-type",
+    "Licenses": [
+      {
+        "Version": "26.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-haste-map",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-jasmine2",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-leak-detector",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-matcher-utils",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-message-util",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-mock",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-pnp-resolver",
+    "Licenses": [
+      {
+        "Version": "1.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-regex-util",
+    "Licenses": [
+      {
+        "Version": "26.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-resolve-dependencies",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-resolve",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-runner",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-runtime",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-serializer",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-snapshot",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-util",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-validate",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-watcher",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest-worker",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jest",
+    "Licenses": [
+      {
+        "Version": "26.6.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "js-base64",
+    "Licenses": [
+      {
+        "Version": "2.6.4",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "js-beautify",
+    "Licenses": [
+      {
+        "Version": "1.14.11",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "js-tokens",
+    "Licenses": [
+      {
+        "Version": "4.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "js-yaml",
+    "Licenses": [
+      {
+        "Version": "3.14.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jsdom",
+    "Licenses": [
+      {
+        "Version": "16.7.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "jsesc",
+    "Licenses": [
+      {
+        "Version": "2.5.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "json-parse-even-better-errors",
+    "Licenses": [
+      {
+        "Version": "2.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "json-schema-traverse",
+    "Licenses": [
+      {
+        "Version": "0.4.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "json5",
+    "Licenses": [
+      {
+        "Version": "2.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "kind-of",
+    "Licenses": [
+      {
+        "Version": "6.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "kleur",
+    "Licenses": [
+      {
+        "Version": "3.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "leven",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "license-checker",
+    "Licenses": [
+      {
+        "Version": "25.0.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "lines-and-columns",
+    "Licenses": [
+      {
+        "Version": "1.2.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "loader-runner",
+    "Licenses": [
+      {
+        "Version": "4.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "loader-utils",
+    "Licenses": [
+      {
+        "Version": "2.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "locate-path",
+    "Licenses": [
+      {
+        "Version": "5.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "lodash",
+    "Licenses": [
+      {
+        "Version": "4.17.21",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "loose-envify",
+    "Licenses": [
+      {
+        "Version": "1.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "lru-cache",
+    "Licenses": [
+      {
+        "Version": "5.1.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "make-dir",
+    "Licenses": [
+      {
+        "Version": "4.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "make-error",
+    "Licenses": [
+      {
+        "Version": "1.3.6",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "makeerror",
+    "Licenses": [
+      {
+        "Version": "1.0.12",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "map-cache",
+    "Licenses": [
+      {
+        "Version": "0.2.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "map-visit",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mdn-data",
+    "Licenses": [
+      {
+        "Version": "2.0.4",
+        "Type": "CC0-1.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "memory-fs",
+    "Licenses": [
+      {
+        "Version": "0.5.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "merge-options",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "merge-stream",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "micromatch",
+    "Licenses": [
+      {
+        "Version": "4.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mime-db",
+    "Licenses": [
+      {
+        "Version": "1.52.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mime-types",
+    "Licenses": [
+      {
+        "Version": "2.1.35",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mimic-fn",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "minimatch",
+    "Licenses": [
+      {
+        "Version": "3.1.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "minimist",
+    "Licenses": [
+      {
+        "Version": "1.2.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "minipass",
+    "Licenses": [
+      {
+        "Version": "7.0.4",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mitt",
+    "Licenses": [
+      {
+        "Version": "1.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mixin-deep",
+    "Licenses": [
+      {
+        "Version": "1.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "mkdirp",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ms",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nanoid",
+    "Licenses": [
+      {
+        "Version": "3.3.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nanomatch",
+    "Licenses": [
+      {
+        "Version": "1.2.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "natural-compare",
+    "Licenses": [
+      {
+        "Version": "1.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "neo-async",
+    "Licenses": [
+      {
+        "Version": "2.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nice-try",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "node-addon-api",
+    "Licenses": [
+      {
+        "Version": "1.7.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "node-cache",
+    "Licenses": [
+      {
+        "Version": "4.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "node-int64",
+    "Licenses": [
+      {
+        "Version": "0.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "node-notifier",
+    "Licenses": [
+      {
+        "Version": "8.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "node-releases",
+    "Licenses": [
+      {
+        "Version": "2.0.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nopt",
+    "Licenses": [
+      {
+        "Version": "7.2.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "normalize-package-data",
+    "Licenses": [
+      {
+        "Version": "2.5.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "normalize-path",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "npm-normalize-package-bin",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "npm-run-path",
+    "Licenses": [
+      {
+        "Version": "4.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nth-check",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "nwsapi",
+    "Licenses": [
+      {
+        "Version": "2.2.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object-assign",
+    "Licenses": [
+      {
+        "Version": "4.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object-copy",
+    "Licenses": [
+      {
+        "Version": "0.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object-inspect",
+    "Licenses": [
+      {
+        "Version": "1.13.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object-keys",
+    "Licenses": [
+      {
+        "Version": "1.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object-visit",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object.assign",
+    "Licenses": [
+      {
+        "Version": "4.1.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object.getownpropertydescriptors",
+    "Licenses": [
+      {
+        "Version": "2.1.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object.pick",
+    "Licenses": [
+      {
+        "Version": "1.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "object.values",
+    "Licenses": [
+      {
+        "Version": "1.1.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "once",
+    "Licenses": [
+      {
+        "Version": "1.4.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "onetime",
+    "Licenses": [
+      {
+        "Version": "5.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "os-homedir",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "os-tmpdir",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "osenv",
+    "Licenses": [
+      {
+        "Version": "0.1.5",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "p-each-series",
+    "Licenses": [
+      {
+        "Version": "2.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "p-finally",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "p-limit",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "p-locate",
+    "Licenses": [
+      {
+        "Version": "4.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "p-try",
+    "Licenses": [
+      {
+        "Version": "2.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "parse-json",
+    "Licenses": [
+      {
+        "Version": "5.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "parse5",
+    "Licenses": [
+      {
+        "Version": "6.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "pascalcase",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "path-exists",
+    "Licenses": [
+      {
+        "Version": "4.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "path-is-absolute",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "path-key",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "path-parse",
+    "Licenses": [
+      {
+        "Version": "1.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "path-scurry",
+    "Licenses": [
+      {
+        "Version": "1.10.1",
+        "Type": "BlueOak-1.0.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "picocolors",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "picomatch",
+    "Licenses": [
+      {
+        "Version": "2.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "pirates",
+    "Licenses": [
+      {
+        "Version": "4.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "pkg-dir",
+    "Licenses": [
+      {
+        "Version": "4.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posix-character-classes",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "postcss-prefix-selector",
+    "Licenses": [
+      {
+        "Version": "1.16.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "postcss",
+    "Licenses": [
+      {
+        "Version": "5.2.18",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posthtml-parser",
+    "Licenses": [
+      {
+        "Version": "0.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posthtml-rename-id",
+    "Licenses": [
+      {
+        "Version": "1.0.12",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posthtml-render",
+    "Licenses": [
+      {
+        "Version": "1.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posthtml-svg-mode",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "posthtml",
+    "Licenses": [
+      {
+        "Version": "0.9.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "pretty-format",
+    "Licenses": [
+      {
+        "Version": "26.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "process-nextick-args",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "prompts",
+    "Licenses": [
+      {
+        "Version": "2.4.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "proto-list",
+    "Licenses": [
+      {
+        "Version": "1.2.4",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "prr",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "psl",
+    "Licenses": [
+      {
+        "Version": "1.9.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "pump",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "punycode",
+    "Licenses": [
+      {
+        "Version": "2.3.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "q",
+    "Licenses": [
+      {
+        "Version": "1.5.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "query-string",
+    "Licenses": [
+      {
+        "Version": "4.3.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "querystringify",
+    "Licenses": [
+      {
+        "Version": "2.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "randombytes",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "raw-loader",
+    "Licenses": [
+      {
+        "Version": "4.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "react-is",
+    "Licenses": [
+      {
+        "Version": "17.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "read-installed",
+    "Licenses": [
+      {
+        "Version": "4.0.3",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "read-package-json",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "read-pkg-up",
+    "Licenses": [
+      {
+        "Version": "7.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "read-pkg",
+    "Licenses": [
+      {
+        "Version": "5.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "readable-stream",
+    "Licenses": [
+      {
+        "Version": "3.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "readdir-scoped-modules",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "regenerator-runtime",
+    "Licenses": [
+      {
+        "Version": "0.11.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "regex-not",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "regexp.prototype.flags",
+    "Licenses": [
+      {
+        "Version": "1.5.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "remove-trailing-separator",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "repeat-element",
+    "Licenses": [
+      {
+        "Version": "1.1.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "repeat-string",
+    "Licenses": [
+      {
+        "Version": "1.6.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "require-directory",
+    "Licenses": [
+      {
+        "Version": "2.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "require-main-filename",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "requires-port",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "resolve-cwd",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "resolve-from",
+    "Licenses": [
+      {
+        "Version": "5.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "resolve-url",
+    "Licenses": [
+      {
+        "Version": "0.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "resolve",
+    "Licenses": [
+      {
+        "Version": "1.22.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ret",
+    "Licenses": [
+      {
+        "Version": "0.1.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "rimraf",
+    "Licenses": [
+      {
+        "Version": "3.0.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "rsvp",
+    "Licenses": [
+      {
+        "Version": "4.8.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "safe-array-concat",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "safe-buffer",
+    "Licenses": [
+      {
+        "Version": "5.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "safe-regex-test",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "safe-regex",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "safer-buffer",
+    "Licenses": [
+      {
+        "Version": "2.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "sane",
+    "Licenses": [
+      {
+        "Version": "4.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "sax",
+    "Licenses": [
+      {
+        "Version": "1.2.4",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "saxes",
+    "Licenses": [
+      {
+        "Version": "5.0.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "schema-utils",
+    "Licenses": [
+      {
+        "Version": "3.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "semver",
+    "Licenses": [
+      {
+        "Version": "6.3.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "serialize-javascript",
+    "Licenses": [
+      {
+        "Version": "6.0.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "set-blocking",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "set-function-length",
+    "Licenses": [
+      {
+        "Version": "1.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "set-function-name",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "set-value",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "shebang-command",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "shebang-regex",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "shellwords",
+    "Licenses": [
+      {
+        "Version": "0.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "side-channel",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "signal-exit",
+    "Licenses": [
+      {
+        "Version": "3.0.7",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "sisteransi",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "slash",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "slide",
+    "Licenses": [
+      {
+        "Version": "1.1.6",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "snapdragon-node",
+    "Licenses": [
+      {
+        "Version": "2.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "snapdragon-util",
+    "Licenses": [
+      {
+        "Version": "3.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "snapdragon",
+    "Licenses": [
+      {
+        "Version": "0.8.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "source-map-js",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "source-map-resolve",
+    "Licenses": [
+      {
+        "Version": "0.5.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "source-map-support",
+    "Licenses": [
+      {
+        "Version": "0.5.21",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "source-map-url",
+    "Licenses": [
+      {
+        "Version": "0.4.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "source-map",
+    "Licenses": [
+      {
+        "Version": "0.6.1",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-compare",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-correct",
+    "Licenses": [
+      {
+        "Version": "3.2.0",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-exceptions",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "CC-BY-3.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-expression-parse",
+    "Licenses": [
+      {
+        "Version": "3.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-license-ids",
+    "Licenses": [
+      {
+        "Version": "3.0.16",
+        "Type": "CC0-1.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-ranges",
+    "Licenses": [
+      {
+        "Version": "2.1.1",
+        "Type": "MIT AND CC-BY-3.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "spdx-satisfies",
+    "Licenses": [
+      {
+        "Version": "4.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "split-string",
+    "Licenses": [
+      {
+        "Version": "3.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "sprintf-js",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "stable",
+    "Licenses": [
+      {
+        "Version": "0.1.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "stack-utils",
+    "Licenses": [
+      {
+        "Version": "2.0.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "static-extend",
+    "Licenses": [
+      {
+        "Version": "0.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strict-uri-encode",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string-length",
+    "Licenses": [
+      {
+        "Version": "4.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string-width",
+    "Licenses": [
+      {
+        "Version": "4.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string.prototype.trim",
+    "Licenses": [
+      {
+        "Version": "1.2.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string.prototype.trimend",
+    "Licenses": [
+      {
+        "Version": "1.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string.prototype.trimstart",
+    "Licenses": [
+      {
+        "Version": "1.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "string_decoder",
+    "Licenses": [
+      {
+        "Version": "1.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strip-ansi",
+    "Licenses": [
+      {
+        "Version": "6.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strip-bom",
+    "Licenses": [
+      {
+        "Version": "4.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strip-eof",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strip-final-newline",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "strip-json-comments",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "supports-color",
+    "Licenses": [
+      {
+        "Version": "5.5.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "supports-hyperlinks",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "supports-preserve-symlinks-flag",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "svg-baker-runtime",
+    "Licenses": [
+      {
+        "Version": "1.4.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "svg-baker",
+    "Licenses": [
+      {
+        "Version": "1.7.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": [
+      {
+        "Range": "<=8.4.30",
+        "Severity": "moderate",
+        "Source": "https://github.com/advisories/GHSA-566m-qj78-rww5"
+      },
+      {
+        "Range": "<=8.4.30",
+        "Severity": "moderate",
+        "Source": "https://github.com/advisories/GHSA-7fh5-64p2-3v2j"
+      }
+    ]
+  },
+  {
+    "Name": "svg-sprite-loader",
+    "Licenses": [
+      {
+        "Version": "5.2.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "svg-to-vue",
+    "Licenses": [
+      {
+        "Version": "0.7.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "svgo",
+    "Licenses": [
+      {
+        "Version": "1.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "symbol-tree",
+    "Licenses": [
+      {
+        "Version": "3.2.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "tapable",
+    "Licenses": [
+      {
+        "Version": "1.1.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "terminal-link",
+    "Licenses": [
+      {
+        "Version": "2.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "terser-webpack-plugin",
+    "Licenses": [
+      {
+        "Version": "5.3.9",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "terser",
+    "Licenses": [
+      {
+        "Version": "5.24.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "test-app",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "UNLICENSED"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "test-exclude",
+    "Licenses": [
+      {
+        "Version": "6.0.0",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "throat",
+    "Licenses": [
+      {
+        "Version": "5.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "tmpl",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "to-fast-properties",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "to-object-path",
+    "Licenses": [
+      {
+        "Version": "0.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "to-regex-range",
+    "Licenses": [
+      {
+        "Version": "5.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "to-regex",
+    "Licenses": [
+      {
+        "Version": "3.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "tough-cookie",
+    "Licenses": [
+      {
+        "Version": "4.1.3",
+        "Type": "BSD-3-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "tr46",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "traverse",
+    "Licenses": [
+      {
+        "Version": "0.6.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "treeify",
+    "Licenses": [
+      {
+        "Version": "1.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ts-jest",
+    "Licenses": [
+      {
+        "Version": "26.5.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ts-loader",
+    "Licenses": [
+      {
+        "Version": "8.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "tsconfig",
+    "Licenses": [
+      {
+        "Version": "7.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "type-detect",
+    "Licenses": [
+      {
+        "Version": "4.0.8",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "type-fest",
+    "Licenses": [
+      {
+        "Version": "0.21.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "type-fest",
+    "Licenses": [
+      {
+        "Version": "0.21.3",
+        "Type": "CC0-1.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typed-array-buffer",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typed-array-byte-length",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typed-array-byte-offset",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typed-array-length",
+    "Licenses": [
+      {
+        "Version": "1.0.4",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typedarray-to-buffer",
+    "Licenses": [
+      {
+        "Version": "3.1.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "typescript",
+    "Licenses": [
+      {
+        "Version": "3.9.10",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "unbox-primitive",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "undici-types",
+    "Licenses": [
+      {
+        "Version": "5.26.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "unidecode",
+    "Licenses": [
+      {
+        "Version": "0.1.8",
+        "Type": "BSD"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "union-value",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "universalify",
+    "Licenses": [
+      {
+        "Version": "0.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "unquote",
+    "Licenses": [
+      {
+        "Version": "1.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "unset-value",
+    "Licenses": [
+      {
+        "Version": "1.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "update-browserslist-db",
+    "Licenses": [
+      {
+        "Version": "1.0.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "uri-js",
+    "Licenses": [
+      {
+        "Version": "4.4.1",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "urix",
+    "Licenses": [
+      {
+        "Version": "0.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "url-loader",
+    "Licenses": [
+      {
+        "Version": "4.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "url-parse",
+    "Licenses": [
+      {
+        "Version": "1.5.10",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "url-slug",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "use",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "util-deprecate",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "util-extend",
+    "Licenses": [
+      {
+        "Version": "1.0.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "util.promisify",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "uuid",
+    "Licenses": [
+      {
+        "Version": "8.3.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "v8-to-istanbul",
+    "Licenses": [
+      {
+        "Version": "7.1.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "validate-npm-package-license",
+    "Licenses": [
+      {
+        "Version": "3.0.4",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-class-component",
+    "Licenses": [
+      {
+        "Version": "7.2.6",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-jest",
+    "Licenses": [
+      {
+        "Version": "3.0.7",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-property-decorator",
+    "Licenses": [
+      {
+        "Version": "9.1.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-svg-loader",
+    "Licenses": [
+      {
+        "Version": "0.16.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-template-compiler",
+    "Licenses": [
+      {
+        "Version": "2.7.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue-template-es2015-compiler",
+    "Licenses": [
+      {
+        "Version": "1.9.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vue",
+    "Licenses": [
+      {
+        "Version": "2.7.15",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vuex-module-decorators",
+    "Licenses": [
+      {
+        "Version": "1.0.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vuex-persist",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "vuex",
+    "Licenses": [
+      {
+        "Version": "3.6.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "w3c-hr-time",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "w3c-xmlserializer",
+    "Licenses": [
+      {
+        "Version": "2.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "walker",
+    "Licenses": [
+      {
+        "Version": "1.0.8",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "watchpack",
+    "Licenses": [
+      {
+        "Version": "2.4.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "webidl-conversions",
+    "Licenses": [
+      {
+        "Version": "6.1.0",
+        "Type": "BSD-2-Clause"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "webpack-sources",
+    "Licenses": [
+      {
+        "Version": "3.2.3",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "webpack",
+    "Licenses": [
+      {
+        "Version": "5.89.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "whatwg-encoding",
+    "Licenses": [
+      {
+        "Version": "1.0.5",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "whatwg-mimetype",
+    "Licenses": [
+      {
+        "Version": "2.3.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "whatwg-url",
+    "Licenses": [
+      {
+        "Version": "8.7.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "which-boxed-primitive",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "which-module",
+    "Licenses": [
+      {
+        "Version": "2.0.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "which-typed-array",
+    "Licenses": [
+      {
+        "Version": "1.1.13",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "which",
+    "Licenses": [
+      {
+        "Version": "2.0.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "wrap-ansi",
+    "Licenses": [
+      {
+        "Version": "6.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "wrap-ansi",
+    "Licenses": [
+      {
+        "Version": "7.0.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "wrappy",
+    "Licenses": [
+      {
+        "Version": "1.0.2",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "write-file-atomic",
+    "Licenses": [
+      {
+        "Version": "3.0.3",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "ws",
+    "Licenses": [
+      {
+        "Version": "7.5.9",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "wu",
+    "Licenses": [
+      {
+        "Version": "2.1.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "xml-name-validator",
+    "Licenses": [
+      {
+        "Version": "3.0.0",
+        "Type": "Apache-2.0"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "xmlchars",
+    "Licenses": [
+      {
+        "Version": "2.2.0",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "y18n",
+    "Licenses": [
+      {
+        "Version": "4.0.3",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "yallist",
+    "Licenses": [
+      {
+        "Version": "3.1.1",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "yargs-parser",
+    "Licenses": [
+      {
+        "Version": "20.2.9",
+        "Type": "ISC"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "yargs",
+    "Licenses": [
+      {
+        "Version": "15.4.1",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  },
+  {
+    "Name": "zxcvbn",
+    "Licenses": [
+      {
+        "Version": "4.4.2",
+        "Type": "MIT"
+      }
+    ],
+    "Vulnerabilities": []
+  }
+]

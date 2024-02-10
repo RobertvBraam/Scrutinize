@@ -1,4 +1,4 @@
-﻿using Domain.Vulnerabilities;
+﻿using Domain.Dependencies;
 
 namespace Scanning.Nuget.Vulnerabilities;
 
@@ -11,9 +11,9 @@ internal class RootAnalysis
 
     public List<ProjectRecord> Projects { get; set; }
 
-    public List<Vulnerability> ToVulnerabilities()
+    public List<Dependency> ToDependencies()
     {
-        var vulnerabilities = new List<Vulnerability>();
+        var vulnerabilities = new List<Dependency>();
 
         foreach (var project in Projects)
         {
@@ -21,13 +21,25 @@ internal class RootAnalysis
             {
                 vulnerabilities.AddRange(framework.TopLevelPackages
                     .SelectMany(package => package.Vulnerabilities
-                        .Select(vulnerability => new Vulnerability(package.Id, vulnerability.Severity, vulnerability.Advisoryurl))
+                        .Select(vulnerability =>
+                        {
+                            var name = package.Id;
+                            var version = package.ResolvedVersion;
+                            return Dependency.Create(name)
+                                .AddVulnerability(version, vulnerability.Severity, vulnerability.Advisoryurl);
+                        })
                     )
                 );
                 
                 vulnerabilities.AddRange(framework.TransitivePackages
                     .SelectMany(package => package.Vulnerabilities
-                        .Select(vulnerability => new Vulnerability(package.Id, vulnerability.Severity, vulnerability.Advisoryurl))
+                        .Select(vulnerability =>
+                        {
+                            var name = package.Id;
+                            var version = package.ResolvedVersion;
+                            return Dependency.Create(name)
+                                .AddVulnerability(version, vulnerability.Severity, vulnerability.Advisoryurl);
+                        })
                     )
                 );
             }

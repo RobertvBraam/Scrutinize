@@ -11,6 +11,15 @@ public class Result<T> : Result
         };
         return result;
     }
+    
+    public static Result<T> NotFound()
+    {
+        var result = new Result<T>()
+        {
+            HasSucceeded = true
+        };
+        return result;
+    }
 
     public new static Result<T> Failed(IDomainFailure failure)
     {
@@ -22,7 +31,7 @@ public class Result<T> : Result
         return result;
     }
     
-    public T Value => HasSucceeded ? _value! : throw new InvalidOperationException("Cannot access value of failed result");
+    public T Value => HasSucceeded && _value is not null ? _value : throw new InvalidOperationException("Cannot access value of failed result");
     private T? _value;
 
     private Result()

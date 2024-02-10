@@ -1,10 +1,14 @@
-﻿using StatsdClient;
+﻿using Domain.Licenses;
+using Domain.Monitoring;
+using Domain.Results;
+using Domain.Vulnerabilities;
+using StatsdClient;
 
 namespace Monitoring.Datadog;
 
-public class Class1
+public class DatadogMetricsClient : IMonitoring
 {
-    public Class1()
+    public DatadogMetricsClient()
     {
         var dogstatsdConfig = new StatsdConfig
         {
@@ -24,5 +28,10 @@ public class Class1
                 System.Threading.Thread.Sleep(100000);
             }
         }
+    }
+
+    public Result SendMetrics(List<License> licenses, List<Vulnerability> vulnerabilities)
+    {
+        throw new NotImplementedException();
     }
 }

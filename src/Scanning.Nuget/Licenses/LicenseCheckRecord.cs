@@ -1,4 +1,4 @@
-﻿using Domain.Licenses;
+﻿using Domain.Dependencies;
 
 namespace Scanning.Nuget.Licenses;
 
@@ -15,5 +15,7 @@ internal class LicenseCheckRecord
     public string PackageVersion { get; set; }
     public string LicenseType { get; set; }
 
-    public License ToLicense() => new(PackageName, PackageVersion, LicenseType);
+    public Dependency ToDependency() => 
+        Dependency.Create(PackageName)
+            .AddLicense(PackageVersion, LicenseType);
 }

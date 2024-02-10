@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Domain.Vulnerabilities;
+using Domain.Dependencies;
 
 namespace Scanning.Npm.Vulnerabilities;
 
@@ -13,16 +13,30 @@ internal class NpmVulnerabilities
     public int AuditReportVersion { get; init; }
     public Dictionary<string, NpmVulnerability> Vulnerabilities { get; init; }
 
-    public IEnumerable<Vulnerability> ToVulnerabilities()
+    public IEnumerable<Dependency> ToDependencies()
     {
-        foreach ((string dependencyName, NpmVulnerability vulnerability) in Vulnerabilities)
+        foreach ((_, NpmVulnerability npmVulnerability) in Vulnerabilities)
         {
-            foreach (var element in vulnerability.Via)
+            foreach (var element in npmVulnerability.Via)
             {
                 if (element.ValueKind == JsonValueKind.Object)
                 {
-                    var dependency = element.Deserialize<Dependency>(new JsonSerializerOptions(){PropertyNameCaseInsensitive = true});
-                    yield return new Vulnerability(dependencyName, vulnerability.Severity, dependency?.Url ?? String.Empty);
+                    var dependencyobject = element.Deserialize<NpmDependency>(new JsonSerializerOptions(){PropertyNameCaseInsensitive = true}) 
+                        ?? throw new ArgumentNullException(nameof(element), "A dependency could not be deserialized.");
+
+                    if (npmVulnerability.Effects.Any())
+                    {
+                        foreach (var effect in npmVulnerability.Effects)
+                        {
+                            yield return Dependency.Create(effect)
+                                .AddVulnerability(npmVulnerability.Range, npmVulnerability.Severity, dependencyobject.Url);
+                        }
+                    }
+                    else
+                    {
+                        yield return Dependency.Create(dependencyobject.Name)
+                            .AddVulnerability(npmVulnerability.Range, npmVulnerability.Severity, dependencyobject.Url);
+                    }
                 }
             }
         }

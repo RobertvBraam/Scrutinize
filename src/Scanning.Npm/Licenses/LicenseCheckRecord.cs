@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-using Domain.Licenses;
+using Domain.Dependencies;
 
 namespace Scanning.Npm.Licenses;
 
@@ -8,7 +8,7 @@ internal class LicenseCheckRecord
     [JsonPropertyName("licenses")]
     public string? Licenses { get; set; }
 
-    public IEnumerable<License> ToLicense(string fullName)
+    public IEnumerable<Dependency> ToLicense(string fullName)
     {
         if (string.IsNullOrWhiteSpace(fullName) == false
             && string.IsNullOrWhiteSpace(Licenses) == false)
@@ -16,7 +16,8 @@ internal class LicenseCheckRecord
             foreach (var license in Licenses.Split("OR").Select(x => x.Trim('(', ')', ' ')))
             {
                 var version = fullName.Split("@").Last();
-                yield return new License(fullName.Replace("@" + version, ""), version, license);
+                yield return Dependency.Create(fullName.Replace("@" + version, ""))
+                    .AddLicense(version, license);
             }
         }
     }
