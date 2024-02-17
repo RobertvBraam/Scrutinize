@@ -11,21 +11,32 @@ public class LicenseFactory
 {
     public static Result<ILicenses> Create(string path)
     {
-        if (!Directory.Exists(path))
-        {
-            return Result<ILicenses>.Failed(IncorrectPathFailed.Create(path));
-        }
-
         var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
         
-        if (Directory.GetFiles(path).Any(x => x.EndsWith(".csproj") || x.EndsWith(".sln")))
+        if (File.Exists(path))
         {
-            return Result<ILicenses>.Succeeded(new Nuget.LicenseScanning(isWindows));
+            if (path.EndsWith(".csproj") || path.EndsWith(".sln"))
+            {
+                return Result<ILicenses>.Succeeded(new Nuget.LicenseScanning(isWindows));
+            }
+        
+            if (path.EndsWith("package.json"))
+            {
+                return Result<ILicenses>.Succeeded(new Npm.LicenseScanning(isWindows, new Logger<Npm.LicenseScanning>()));
+            }
         }
         
-        if (path.EndsWith("package.json"))
+        if (Directory.Exists(path))
         {
-            return Result<ILicenses>.Succeeded(new Npm.LicenseScanning(isWindows, new Logger<Npm.LicenseScanning>()));
+            if (Directory.GetFiles(path).Any(file => file.EndsWith(".csproj") || file.EndsWith(".sln")))
+            {
+                return Result<ILicenses>.Succeeded(new Nuget.LicenseScanning(isWindows));
+            }
+            
+            if (Directory.GetFiles(path).Any(file => file.EndsWith("package.json")))
+            {
+                return Result<ILicenses>.Succeeded(new Npm.LicenseScanning(isWindows, new Logger<Npm.LicenseScanning>()));
+            }
         }
 
         return Result<ILicenses>.Failed(IncorrectPathFailed.Create(path));

@@ -6,6 +6,13 @@ namespace Persistence.LocalFile;
 
 public class FileClient : IPersistence
 {
+    private readonly string _localFilePath;
+
+    public FileClient(string localFilePath)
+    {
+        _localFilePath = localFilePath;
+    }
+
     public Result SaveDependencies(List<Dependency> dependencies)
     {
         throw new NotImplementedException();

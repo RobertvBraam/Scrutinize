@@ -6,13 +6,13 @@ namespace Host.Console;
 
 internal class PersistenceFactory
 {
-    public static Result<IPersistence> Create(string localFilePath)
+    public static Result<IPersistence> Create(StorageTypes storageTypes)
     {
-        if (!String.IsNullOrWhiteSpace(localFilePath) && Directory.Exists(localFilePath))
+        return storageTypes switch
         {
-            return Result<IPersistence>.Succeeded(new FileClient());
-        }
-        
-        return Result<IPersistence>.Failed(InitializationFailed.Create());
+            StorageTypes.None => Result<IPersistence>.NotFound(),
+            StorageTypes.LocalFile => Result<IPersistence>.Succeeded(new FileClient("scan/dependencies.json")),
+            _ => Result<IPersistence>.Failed(InitializationFailed.Create())
+        };
     }
 }

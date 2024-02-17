@@ -33,7 +33,6 @@ public class Program
         var appRunner = new AppRunner<Program>(appSettings);
             
         appRunner.UseDefaultMiddleware();
-        appRunner.UseTypoSuggestions();
         
         var exitcode = appRunner.Run(args);
             
@@ -62,37 +61,57 @@ public class Scanning
     [DefaultCommand] 
     public void DefaultCommand(
         [Option('p', "path", Description = "Path to the root of the project")] string path = "",
-        //TODO: Check if it's possible to set a default value
-        [Option('l', "local-file-storage", Description = "Save results in a local file")] string localFilePath = "",
-        [Option('d', "diff-from-storage", Description = "Only send out new licenses based on storage")] bool diffFromStorage = false)
+        [Option('s', "storage", Description = "Save the results of the scan")] StorageTypes storageType = StorageTypes.None,
+        [Option('d', "diff", Description = "Only return new licenses or vulnerabilities based on previous runs (stored)")] bool diffFromStorage = false)
     {
         var scanResult = ScanForDependencies(path);
         var dependencies = scanResult.Value;
-        var persistResult = PersistDependencies(dependencies, localFilePath);
         
-        //TODO: Implement Diff Feature
-        if (diffFromStorage)
+        ConsoleWriteDependencies(dependencies);
+        
+        var persistResult = PersistDependencies(dependencies, storageType);
+        
+        if (persistResult.HasFailed)
         {
-            dependencies = persistResult.Value;
+            System.Console.WriteLine(persistResult.FailureReason.Message);
+            return;
         }
         
-        SendDependenciesToMonitoring(dependencies);
+        var sendDependenciesResult = SendDependenciesToMonitoring(dependencies);
+        
+        if (sendDependenciesResult.HasFailed)
+        {
+            System.Console.WriteLine(sendDependenciesResult.FailureReason.Message);
+            return;
+        }
+
+        System.Console.WriteLine("Scan completed.");
     }
 
     private Result SendDependenciesToMonitoring(List<Dependency> dependencies)
     {
-        
-        
         return Result.Succeeded();
     }
 
-    private Result<List<Dependency>> PersistDependencies(List<Dependency> dependencies, string localFilePath)
+    private Result PersistDependencies(List<Dependency> dependencies, StorageTypes storageType)
     {
-        var persistence = PersistenceFactory.Create(localFilePath);
-        var usercase = new PersistDependenciesUseCase(persistence.Value);
-        return Result<List<Dependency>>.Succeeded(new List<Dependency>());
+        if (storageType is StorageTypes.None)
+        {
+            return Result<List<Dependency>>.Succeeded(dependencies);
+        }
+        
+        var persistence = PersistenceFactory.Create(storageType);
+        
+        if (persistence.HasFailed)
+        {
+            return Result<List<Dependency>>.Failed(persistence.FailureReason);
+        }
+        
+        var useCase = new PersistDependenciesUseCase(persistence.Value);
+        
+        return useCase.Execute(dependencies);
     }
-
+    
     private static Result<List<Dependency>> ScanForDependencies(string path)
     {
         if (String.IsNullOrWhiteSpace(path))
@@ -105,13 +124,11 @@ public class Scanning
 
         if (licensesResult.HasFailed)
         {
-            System.Console.WriteLine(licensesResult.FailureReason.Message);
             return Result<List<Dependency>>.Failed(licensesResult.FailureReason);
         }
 
         if (vulnerabilitiesResult.HasFailed)
         {
-            System.Console.WriteLine(vulnerabilitiesResult.FailureReason.Message);
             return Result<List<Dependency>>.Failed(vulnerabilitiesResult.FailureReason);
         }
 
@@ -120,40 +137,26 @@ public class Scanning
 
         if (scannedDependencies.HasFailed)
         {
-            System.Console.WriteLine(scannedDependencies.FailureReason.Message);
             return Result<List<Dependency>>.Failed(scannedDependencies.FailureReason);
         }
         
-        var resultLicenses = JsonSerializer.Serialize(scannedDependencies.Value);
-        System.Console.WriteLine(resultLicenses);
         return scannedDependencies;
     }
 
-    private static Result<IVulnerabilities> ScanForVulnerabilities(string path)
+    private static void ConsoleWriteDependencies(List<Dependency> dependencies)
     {
-        if (String.IsNullOrWhiteSpace(path))
+        var jsonResult = JsonSerializer.Serialize(dependencies, new JsonSerializerOptions()
         {
-            path = Environment.CurrentDirectory;
-        }
+            WriteIndented = true
+        });
         
-        var vulnerabilities = VulnerabilityFactory.Create(path);
-
-        if (vulnerabilities.HasFailed)
-        {
-            System.Console.WriteLine(vulnerabilities.FailureReason.Message);
-            return vulnerabilities;
-        }
-        
-        var scannedVulnerabilities = vulnerabilities.Value.Scan(path);
-
-        if (scannedVulnerabilities.HasFailed)
-        {
-            System.Console.WriteLine(scannedVulnerabilities.FailureReason.Message);
-            return vulnerabilities;
-        }
-        
-        var resultVulnerabilities = JsonSerializer.Serialize(scannedVulnerabilities.Value);
-        System.Console.WriteLine(resultVulnerabilities);
-        return vulnerabilities;
+        System.Console.WriteLine(jsonResult);
     }
+}
+
+public enum StorageTypes
+{
+    None,
+    LocalFile,
+    CloudStorage
 }
