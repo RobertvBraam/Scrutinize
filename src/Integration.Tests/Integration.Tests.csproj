@@ -1,33 +1,35 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
+        <LangVersion>12</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="CommandDotNet.TestTools" Version="6.0.3" />
         <PackageReference Include="FluentAssertions" Version="6.12.0"/>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0"/>
-        <PackageReference Include="xunit" Version="2.4.2"/>
-        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+        <PackageReference Include="Snapshooter.Xunit" Version="0.14.1" />
+        <PackageReference Include="xunit" Version="2.7.0" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="coverlet.collector" Version="3.2.0">
+        <PackageReference Include="coverlet.collector" Version="6.0.0">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj"/>
-        <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj"/>
-        <ProjectReference Include="..\Vulnerabilities.Npm\Vulnerabilities.Npm.csproj"/>
-        <ProjectReference Include="..\Vulnerabilities.Nuget\Vulnerabilities.Nuget.csproj"/>
+        <ProjectReference Include="..\Host.Console\Host.Console.csproj" />
+        <ProjectReference Include="..\Scanning.Npm\Scanning.Npm.csproj" />
+        <ProjectReference Include="..\Scanning.Nuget\Scanning.Nuget.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -44,5 +46,9 @@
         <Compile Remove="TestApp\**"/>
         <EmbeddedResource Remove="TestApp\**"/>
         <None Remove="TestApp\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="__snapshots__\" />
     </ItemGroup>
 </Project>

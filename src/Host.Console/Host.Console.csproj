@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <OutputType>Exe</OutputType>
@@ -11,6 +11,7 @@
         <PackageType>DotnetTool</PackageType>
         <RepositoryType>git</RepositoryType>
         <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+        <AssemblyName>Scrutinize</AssemblyName>
         <Version>1.0.0-alpha.2</Version>
         <Title>Scrutinize</Title>
         <Authors>RobertvBraam</Authors>
@@ -22,19 +23,23 @@
         <RepositoryUrl>https://github.com/RobertvBraam/Scrutinize</RepositoryUrl>
         <PackageTags>security, dependencies, license, vulnerability, npm, nuget, console, ci-cd</PackageTags>
         <PackageId>Scrutinize</PackageId>
+        <LangVersion>12</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="CommandDotNet" Version="7.0.2" />
+      <PackageReference Include="CommandDotNet" Version="7.0.3" />
+      <PackageReference Include="Serilog" Version="3.1.1" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+      <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+      <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <None Include="..\..\README.md" Pack="true" PackagePath="\" />
       <ProjectReference Include="..\Domain\Domain.csproj" />
-      <ProjectReference Include="..\Scanning.Licenses.Npm\Scanning.Licenses.Npm.csproj" />
-      <ProjectReference Include="..\Scanning.Licenses.Nuget\Scanning.Licenses.Nuget.csproj" />
-      <ProjectReference Include="..\Vulnerabilities.Npm\Vulnerabilities.Npm.csproj" />
-      <ProjectReference Include="..\Vulnerabilities.Nuget\Vulnerabilities.Nuget.csproj" />
+      <ProjectReference Include="..\Persistence.LocalFile\Persistence.LocalFile.csproj" />
+      <ProjectReference Include="..\Scanning.Npm\Scanning.Npm.csproj" />
+      <ProjectReference Include="..\Scanning.Nuget\Scanning.Nuget.csproj" />
     </ItemGroup>
 
 </Project>
